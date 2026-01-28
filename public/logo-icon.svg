@@ -1,0 +1,13 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#1A2A52"/>
+  <!-- Q Monogram -->
+  <g>
+    <!-- Outer circle -->
+    <circle cx="32" cy="32" r="22" fill="none" stroke="#D4AF37" stroke-width="2.5"/>
+    <!-- Q letter -->
+    <path d="M 32 18 Q 32 12 26 12 Q 20 12 20 18 Q 20 24 26 24 L 26 30" stroke="#D4AF37" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Q tail -->
+    <path d="M 26 30 L 32 36" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

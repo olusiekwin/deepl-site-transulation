@@ -1,0 +1,455 @@
+{
+  "common": {
+    "engageUs": "Contáctenos",
+    "learnMore": "Más Información",
+    "readMore": "Leer Más",
+    "contactUs": "Contáctenos",
+    "submitInquiry": "Enviar Consulta",
+    "submitting": "Enviando...",
+    "services": "Servicios",
+    "company": "Empresa",
+    "connect": "Conectar",
+    "allServices": "Todos los Servicios",
+    "responseTime": "Tiempo de Respuesta",
+    "responseTimeDesc": "Nuestro equipo normalmente responde en 2-3 días hábiles. Para asuntos urgentes, indíquelo en su mensaje."
+  },
+  "nav": {
+    "about": "Nosotros",
+    "services": "Servicios",
+    "sectors": "Sectores",
+    "partners": "Socios de Capital",
+    "process": "Proceso",
+    "governance": "Gobernanza",
+    "insights": "Perspectivas",
+    "globalPresence": "Presencia Global",
+    "contact": "Contacto"
+  },
+  "home": {
+    "subtitle": "Asesoría de Capital Independiente",
+    "headline": "Asesoría de Capital y Estructuración de Inversiones",
+    "description": "Apoyamos a empresas, patrocinadores de proyectos e instituciones públicas en la estructuración de capital, el compromiso de inversores y la ejecución de estrategias de financiamiento disciplinadas en los mercados globales.",
+    "cta": "Contacte al Equipo de Asesoría",
+    "ourServices": "Nuestros Servicios",
+    "platformSubtitle": "Nuestra Plataforma",
+    "platformTitle": "Estructuración de Capital Disciplinada",
+    "platformDesc": "Operamos como una plataforma de asesoría de capital y apoyo a transacciones, trabajando con clientes calificados para diseñar estructuras de financiamiento, mejorar la preparación de capital y facilitar el compromiso con socios de capital institucional.",
+    "platformDesc2": "Nuestro trabajo está guiado por la gobernanza, la disciplina de riesgos y la alineación a largo plazo. Priorizamos procesos transparentes y resultados sostenibles.",
+    "learnApproach": "Conozca Nuestro Enfoque",
+    "governanceLed": "Liderazgo en Gobernanza",
+    "governanceDesc": "Estándares éticos y conciencia regulatoria",
+    "riskDisciplined": "Disciplina de Riesgos",
+    "riskDesc": "Identificación y mitigación integral de riesgos",
+    "longTermAligned": "Alineación a Largo Plazo",
+    "longTermDesc": "Asociaciones sostenibles en lugar de transacciones rápidas",
+    "servicesSubtitle": "Nuestros Servicios",
+    "servicesTitle": "Pilares de Servicios Principales",
+    "servicesDesc": "Servicios integrales de asesoría y apoyo a transacciones a lo largo del ciclo de vida del capital.",
+    "sectorsSubtitle": "Sectores Atendidos",
+    "sectorsTitle": "Experiencia Sectorial Profunda",
+    "sectorsDesc": "Trabajamos en múltiples sectores, aplicando conocimiento especializado y redes establecidas para apoyar requisitos complejos de capital.",
+    "exploreAllSectors": "Explorar Todos los Sectores",
+    "globalReach": "Alcance Global",
+    "globalReachDesc": "Nuestra plataforma de asesoría abarca cinco continentes, proporcionando experiencia local con perspectiva global.",
+    "ctaTitle": "¿Listo para Estructurar Su Estrategia de Capital?",
+    "ctaDesc": "Contacte a nuestro equipo de asesoría para discutir sus requisitos de capital y explorar soluciones de financiamiento estructurado."
+  },
+  "about": {
+    "subtitle": "Sobre Nosotros",
+    "headline": "Quiénes Somos",
+    "description": "Una firma de asesoría de capital independiente enfocada en apoyar a clientes en procesos complejos de financiamiento e inversión en múltiples regiones y sectores.",
+    "mandateSubtitle": "Nuestro Mandato",
+    "mandateTitle": "Facilitando el Acceso al Capital Apropiado",
+    "mandateDesc": "Nuestro mandato es ayudar a los clientes a acceder al capital apropiado mejorando la preparación para la inversión, estructurando transacciones de manera responsable y facilitando el compromiso con socios de financiamiento adecuados.",
+    "mandateDesc2": "Trabajamos con empresas, patrocinadores de proyectos e instituciones públicas que requieren apoyo sofisticado de asesoría de capital.",
+    "clientFocus": "Enfoque en el Cliente",
+    "clientFocusItems": [
+      "Corporaciones buscando capital de crecimiento o expansión",
+      "Patrocinadores y desarrolladores de proyectos",
+      "Entidades públicas y cuasi-públicas",
+      "Holdings de inversión",
+      "Inversores institucionales buscando deal flow"
+    ],
+    "approachSubtitle": "Nuestro Enfoque",
+    "approachTitle": "Asesoría Disciplinada y Orientada a Procesos",
+    "approachDesc": "Aplicamos un enfoque estructurado que enfatiza el rigor, la gestión de riesgos y la alineación.",
+    "values": [
+      {
+        "title": "Rigor Financiero y Estructural",
+        "description": "Cada compromiso está fundamentado en un análisis financiero robusto y un diseño estructural sólido."
+      },
+      {
+        "title": "Identificación y Mitigación de Riesgos",
+        "description": "Identificamos proactivamente los riesgos y desarrollamos estrategias para abordarlos eficazmente."
+      },
+      {
+        "title": "Transparencia y Gobernanza",
+        "description": "Nuestros procesos priorizan la comunicación clara y la adherencia a los estándares de gobernanza."
+      },
+      {
+        "title": "Alineación Patrocinador-Inversor",
+        "description": "Estructuramos transacciones para asegurar la alineación entre todos los stakeholders."
+      }
+    ],
+    "governanceSubtitle": "Filosofía de Liderazgo",
+    "governanceTitle": "Responsabilidad e Independencia",
+    "governanceEthics": "Gobernanza y Ética",
+    "governanceEthicsDesc": "Operamos bajo estándares éticos rigurosos, priorizando la integridad y las prácticas de asesoría responsables.",
+    "ethicsItems": [
+      "Confidencialidad y protección de datos",
+      "Integridad en todas las relaciones",
+      "Prácticas de asesoría responsables",
+      "Cumplimiento de leyes aplicables",
+      "Conciencia regulatoria",
+      "Adherencia a estándares profesionales"
+    ],
+    "governanceDesc": "Nuestra filosofía de liderazgo enfatiza la responsabilidad, las relaciones a largo plazo y la independencia en la asesoría.",
+    "governanceDesc2": "Todos los compromisos se conducen de acuerdo con las leyes aplicables, las expectativas regulatorias y los estándares profesionales.",
+    "learnGovernance": "Conozca Nuestra Gobernanza"
+  },
+  "services": {
+    "subtitle": "Nuestros Servicios",
+    "headline": "Asesoría y Apoyo a Transacciones",
+    "description": "Proporcionamos servicios integrales de asesoría y apoyo a transacciones a lo largo del ciclo de vida del capital, desde la preparación inicial hasta la ejecución y la asesoría post-transacción.",
+    "ctaTitle": "Discuta Sus Requisitos de Capital",
+    "ctaDesc": "Nuestro equipo está listo para entender sus necesidades y desarrollar un enfoque de asesoría personalizado.",
+    "capitalAdvisory": {
+      "title": "Asesoría de Capital",
+      "shortDesc": "Desarrollo de estrategia de capital alineada con sus objetivos de negocio y perfil de riesgo.",
+      "headline": "Estrategia de Capital Estratégica",
+      "description": "Definiendo estrategias de capital apropiadas alineadas con su modelo de negocio, perfil de riesgo y objetivos de crecimiento.",
+      "overview": "Nuestros servicios de Asesoría de Capital apoyan a los clientes en la definición de estrategias de capital apropiadas alineadas con sus modelos de negocio, perfiles de riesgo y objetivos de crecimiento.",
+      "whoIsFor": [
+        "Corporaciones buscando capital de crecimiento o expansión",
+        "Patrocinadores y desarrolladores de proyectos",
+        "Entidades públicas y cuasi-públicas",
+        "Holdings de inversión"
+      ],
+      "whatWeDo": [
+        "Desarrollo de estrategia de capital",
+        "Análisis de opciones de financiamiento (deuda, equity, financiamiento mixto)",
+        "Posicionamiento y preparación de inversores",
+        "Planificación y secuenciación de transacciones",
+        "Análisis de mercado y benchmarking"
+      ],
+      "outcomes": "Los clientes ganan claridad sobre opciones de capital, mejor preparación para inversores y compromiso estructurado con socios de financiamiento apropiados."
+    },
+    "projectFinance": {
+      "title": "Project Finance y Financiamiento Estructurado",
+      "shortDesc": "Asesoría integral para proyectos complejos de infraestructura, energía y desarrollo.",
+      "headline": "Asesoría de Proyectos Complejos",
+      "description": "Asesoría integral para iniciativas de infraestructura, energía y desarrollo a gran escala que requieren soluciones de financiamiento estructurado.",
+      "overview": "Asesoramos en la estructuración y financiamiento de proyectos complejos, incluyendo infraestructura, energía e iniciativas de desarrollo a gran escala.",
+      "scope": [
+        "Estructuración y modelado financiero",
+        "Diseño y optimización de la estructura de capital",
+        "Coordinación de prestamistas e inversores",
+        "Apoyo y gestión de due diligence",
+        "Marcos de asignación de riesgos",
+        "Asesoría de contratos y term sheets"
+      ],
+      "outcomes": "Todos los compromisos de asesoría de proyecto se evalúan basándose en la asignación de riesgos, viabilidad comercial y sostenibilidad a largo plazo.",
+      "importantNote": "La asesoría de project finance requiere due diligence extensiva y alineación de stakeholders."
+    },
+    "privateCredit": {
+      "title": "Crédito Privado y Soluciones de Préstamo",
+      "shortDesc": "Acceso a soluciones de crédito privado a través de asesoría estructurada y compromiso de prestamistas.",
+      "headline": "Asesoría de Crédito Privado",
+      "description": "Servicios de asesoría y facilitación para evaluar y acceder a soluciones de crédito privado a través del compromiso estructurado de prestamistas.",
+      "overview": "Ayudamos a los clientes a evaluar y acceder a soluciones de crédito privado a través de asesoría estructurada y compromiso de prestamistas.",
+      "whatWeDo": [
+        "Evaluación de requisitos de financiamiento y elegibilidad",
+        "Preparación de documentación de préstamo y memorandos de información",
+        "Facilitación del compromiso con prestamistas privados y fondos de crédito",
+        "Apoyo a procesos de negociación y cierre",
+        "Estructuración de marcos apropiados de garantía y covenants"
+      ],
+      "outcomes": "Los clientes se benefician del acceso estructurado a mercados de crédito privado y representación profesional.",
+      "importantNote": "No proporcionamos préstamos directos y no garantizamos resultados de financiamiento. Nuestro rol es solo de asesoría y facilitación."
+    },
+    "investmentStructuring": {
+      "title": "Estructuración de Inversión y Sindicación",
+      "shortDesc": "Coordinación de arreglos de co-inversión y sindicación para inversores institucionales.",
+      "headline": "Estructuración de Inversión",
+      "description": "Apoyando la estructuración de oportunidades de inversión y coordinación de arreglos de co-inversión y sindicación.",
+      "overview": "Apoyamos la estructuración de oportunidades de inversión y la coordinación de arreglos de co-inversión y sindicación.",
+      "scope": [
+        "Estructuración y diseño de vehículos de inversión",
+        "Desarrollo de marcos de co-inversión",
+        "Coordinación de inversores y sindicación",
+        "Apoyo a la gobernanza de transacciones",
+        "Asesoría de negociación de términos",
+        "Marcos de reportes para inversores"
+      ],
+      "outcomes": "Los clientes logran deployment eficiente de capital a través de vehículos de inversión bien estructurados."
+    },
+    "strategicPartnerships": {
+      "title": "Alianzas Estratégicas de Capital",
+      "shortDesc": "Facilitación de alianzas a largo plazo entre patrocinadores y proveedores de capital institucional.",
+      "headline": "Alianzas Estratégicas",
+      "description": "Facilitando alianzas estratégicas de capital entre patrocinadores de proyectos, inversores institucionales y proveedores de capital a largo plazo.",
+      "overview": "Facilitamos alianzas estratégicas de capital entre patrocinadores de proyectos, inversores institucionales y proveedores de capital a largo plazo.",
+      "scope": [
+        "Desarrollo de estrategia de alianza",
+        "Identificación y outreach de inversores",
+        "Marco de alineación de intereses",
+        "Estructuración de retorno ajustado al riesgo",
+        "Estándares de gobernanza y reportes",
+        "Gestión de relaciones a largo plazo"
+      ],
+      "outcomes": "Alianzas estratégicas exitosas construidas sobre alineación clara, distribución de riesgos apropiada y marcos robustos de gobernanza."
+    },
+    "financialReadiness": {
+      "title": "Preparación para Inversión y Financiera",
+      "shortDesc": "Preparación de marcos financieros, operacionales y de gobernanza para el compromiso de capital.",
+      "headline": "Preparación de Capital",
+      "description": "Preparando a los clientes para el compromiso de capital fortaleciendo los marcos financieros, operacionales y de gobernanza.",
+      "overview": "Ayudamos a los clientes a prepararse para el compromiso de capital fortaleciendo los marcos financieros, operacionales y de gobernanza.",
+      "whatWeDo": [
+        "Modelado y proyecciones financieras",
+        "Preparación y revisión de documentación",
+        "Controles internos y preparación de reportes",
+        "Apoyo a presentaciones para inversores",
+        "Preparación del equipo directivo",
+        "Evaluación de preparación para due diligence"
+      ],
+      "outcomes": "Los clientes logran mejor preparación de capital y confianza en el compromiso con inversores institucionales."
+    },
+    "detail": {
+      "overview": "Descripción General",
+      "whoIsFor": "Para Quién",
+      "whatWeDo": "Lo Que Hacemos",
+      "scope": "Alcance del Apoyo",
+      "outcomes": "Resultados",
+      "importantNote": "Nota Importante",
+      "readyToBegin": "¿Listo para Comenzar?",
+      "readyDesc": "Contacte a nuestro equipo de asesoría para discutir sus requisitos específicos.",
+      "otherServices": "Otros Servicios"
+    }
+  },
+  "sectors": {
+    "subtitle": "Sectores Atendidos",
+    "headline": "Experiencia Sectorial Profunda",
+    "description": "Trabajamos en múltiples sectores, aplicando conocimiento especializado y redes establecidas.",
+    "infrastructure": {
+      "title": "Infraestructura y APPs",
+      "description": "Apoyo de asesoría para proyectos de infraestructura a gran escala y alianzas público-privadas con requisitos complejos de capital."
+    },
+    "energy": {
+      "title": "Energía y Servicios Públicos",
+      "description": "Apoyo para proyectos de energía convencional y renovable, incluyendo generación, transmisión e infraestructura de servicios públicos."
+    },
+    "realEstate": {
+      "title": "Bienes Raíces y Vivienda",
+      "description": "Estructuración de capital para desarrollos comerciales, residenciales y de uso mixto."
+    },
+    "industrial": {
+      "title": "Industrial y Manufactura",
+      "description": "Financiamiento de crecimiento y expansión para operadores industriales y fabricantes."
+    },
+    "agriculture": {
+      "title": "Agricultura y Agroindustria",
+      "description": "Asesoría de financiamiento estructurado para cadenas de valor agrícolas y plataformas agroindustriales."
+    },
+    "financialServices": {
+      "title": "Servicios Financieros",
+      "description": "Apoyo de asesoría para instituciones financieras, vehículos de inversión y entidades reguladas."
+    },
+    "publicSector": {
+      "title": "Sector Público y Desarrollo",
+      "description": "Asesoría de capital y apoyo a transacciones para iniciativas públicas y orientadas al desarrollo."
+    },
+    "ctaSubtitle": "Experiencia Trans-Sectorial",
+    "ctaTitle": "Soluciones Sectoriales Específicas",
+    "ctaDesc": "Nuestro equipo de asesoría aporta conocimiento especializado a cada sector.",
+    "discussSector": "Discuta Su Sector"
+  },
+  "partners": {
+    "subtitle": "Socios de Capital y Redes",
+    "headline": "Ecosistema de Capital Institucional",
+    "description": "Mantenemos relaciones con una amplia red de proveedores de capital institucional, facilitando el compromiso estructurado entre patrocinadores calificados y socios de financiamiento apropiados.",
+    "introTitle": "Nuestro Rol como Facilitador",
+    "introDesc": "Nos posicionamos como una plataforma de estructuración y facilitación, no como un fondo. Nuestro rol es preparar a los clientes para el compromiso de capital y coordinar introducciones profesionales.",
+    "introDesc2": "Todos los compromisos de socios de capital están sujetos a calificación rigurosa, due diligence y evaluación de alineación.",
+    "partnerTypes": "Categorías de Socios",
+    "institutional": {
+      "title": "Inversores Institucionales",
+      "description": "Fondos de pensiones, fondos soberanos y gestores de activos buscando oportunidades de inversión estructuradas."
+    },
+    "dfi": {
+      "title": "Instituciones de Financiamiento al Desarrollo",
+      "description": "Bancos de desarrollo multilaterales y bilaterales enfocados en infraestructura, energía y proyectos de desarrollo."
+    },
+    "privateLenders": {
+      "title": "Prestamistas Privados y Fondos de Crédito",
+      "description": "Proveedores de crédito alternativo, prestamistas directos y empresas de financiamiento especializado."
+    },
+    "familyOffices": {
+      "title": "Family Offices",
+      "description": "Single y multi-family offices buscando oportunidades de inversión directa y arreglos de co-inversión."
+    },
+    "strategic": {
+      "title": "Co-Inversores Estratégicos",
+      "description": "Inversores corporativos, operadores de la industria y socios estratégicos buscando oportunidades de inversión alineadas."
+    },
+    "disclaimer": "Aviso de Alianza",
+    "disclaimerText": "No garantizamos introducciones, resultados de financiamiento o compromisos de inversión.",
+    "ctaTitle": "Discuta Oportunidades de Alianza de Capital",
+    "ctaDesc": "Contacte a nuestro equipo para explorar cómo podemos facilitar el compromiso estructurado."
+  },
+  "process": {
+    "subtitle": "Proceso y Metodología",
+    "headline": "Proceso de Asesoría Estructurado",
+    "description": "Cada compromiso sigue un proceso documentado y disciplinado alineado con las mejores prácticas en asesoría de capital.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Evaluación Inicial",
+        "description": "Comenzamos con una evaluación integral de sus requisitos de capital, contexto de negocio y objetivos estratégicos."
+      },
+      {
+        "number": "02",
+        "title": "Revisión de Preparación de Capital",
+        "description": "Nuestro equipo realiza una revisión exhaustiva de sus marcos financieros, operacionales y de gobernanza."
+      },
+      {
+        "number": "03",
+        "title": "Estructuración y Posicionamiento",
+        "description": "Desarrollamos estructuras de financiamiento apropiadas y posicionamos su oportunidad para el compromiso óptimo."
+      },
+      {
+        "number": "04",
+        "title": "Compromiso de Inversores",
+        "description": "Compromiso sistemático con proveedores de capital calificados, gestionando el proceso profesionalmente."
+      },
+      {
+        "number": "05",
+        "title": "Coordinación de Due Diligence",
+        "description": "Coordinamos el proceso de due diligence, gestionando el flujo de información y asegurando respuestas oportunas."
+      },
+      {
+        "number": "06",
+        "title": "Apoyo a la Transacción",
+        "description": "Apoyo activo a través de procesos de negociación, documentación y cierre."
+      },
+      {
+        "number": "07",
+        "title": "Asesoría Post-Transacción",
+        "description": "Apoyo de asesoría continuo después del cierre de la transacción, incluyendo marcos de reportes."
+      }
+    ],
+    "ctaTitle": "Inicie Su Compromiso de Asesoría",
+    "ctaDesc": "Contacte a nuestro equipo para discutir cómo nuestro proceso estructurado puede apoyar sus requisitos de capital.",
+    "startConversation": "Iniciar la Conversación"
+  },
+  "governance": {
+    "subtitle": "Gobernanza, Riesgo y Cumplimiento",
+    "headline": "Asesoría Orientada por la Gobernanza",
+    "description": "Operamos bajo un marco de asesoría orientado por la gobernanza que prioriza la conducta ética, la gestión de riesgos y la conciencia regulatoria.",
+    "principlesSubtitle": "Principios Fundamentales",
+    "principlesTitle": "Nuestro Marco de Gobernanza",
+    "principlesDesc": "Nuestra práctica de asesoría está construida sobre principios fundamentales que guían cada compromiso.",
+    "principles": [
+      {
+        "title": "Conducta Ética",
+        "description": "Mantenemos los más altos estándares éticos, priorizando los intereses de los clientes y la integridad del mercado."
+      },
+      {
+        "title": "Identificación de Riesgos",
+        "description": "La evaluación integral de riesgos y las estrategias de mitigación son integrales a cada compromiso."
+      },
+      {
+        "title": "Conciencia AML y KYC",
+        "description": "Mantenemos conciencia de los requisitos anti-lavado de dinero y realizamos procesos KYC apropiados."
+      },
+      {
+        "title": "Confidencialidad",
+        "description": "La información de los clientes está protegida con protocolos estrictos de confidencialidad."
+      },
+      {
+        "title": "Cumplimiento Regulatorio",
+        "description": "Todos los compromisos se conducen de acuerdo con las leyes aplicables y las expectativas regulatorias."
+      }
+    ],
+    "regulatoryTitle": "Aviso Regulatorio",
+    "regulatoryText1": "No proporcionamos servicios financieros regulados en jurisdicciones donde se requiere autorización, salvo indicación explícita.",
+    "regulatoryText2": "Nuestros servicios de asesoría se proporcionan de manera no vinculante y no constituyen asesoría de inversión.",
+    "regulatoryText3": "Los clientes deben buscar asesoría profesional independiente apropiada a sus circunstancias.",
+    "ctaTitle": "¿Preguntas Sobre Nuestro Enfoque?",
+    "ctaDesc": "Contacte a nuestro equipo para discutir nuestro marco de gobernanza."
+  },
+  "insights": {
+    "subtitle": "Perspectivas y Publicaciones",
+    "headline": "Perspectivas del Mercado",
+    "description": "Contenido informativo sobre tendencias de estructuración de capital, marcos de inversión y desarrollos del mercado.",
+    "topics": {
+      "structuring": "Tendencias de Estructuración de Capital",
+      "frameworks": "Marcos de Inversión",
+      "markets": "Desarrollos del Mercado"
+    },
+    "articles": "artículos",
+    "disclaimer": "Las publicaciones son informativas y no constituyen asesoría de inversión.",
+    "stayInformed": "Manténgase Informado",
+    "stayInformedDesc": "Contáctenos para discutir nuestras últimas perspectivas sobre los mercados de capital.",
+    "contactTeam": "Contactar a Nuestro Equipo"
+  },
+  "globalPresence": {
+    "subtitle": "Presencia Global",
+    "headline": "Plataforma de Asesoría Mundial",
+    "description": "Nuestra plataforma de asesoría abarca cinco continentes, proporcionando experiencia local con perspectiva global.",
+    "headOffice": "Oficina Principal",
+    "headOfficeDesc": "Oficina de Coordinación Principal",
+    "headOfficeLocation": "Ciudad, País",
+    "regionalSubtitle": "Red Regional",
+    "regionalTitle": "Oficinas Virtuales y Representativas",
+    "regionalDesc": "Operadas a través de Regus Business Centres para coordinación regional y compromiso de clientes.",
+    "regions": {
+      "africa": "África",
+      "middleEast": "Medio Oriente",
+      "europe": "Europa",
+      "asia": "Asia",
+      "northAmerica": "América del Norte"
+    },
+    "officeTypes": {
+      "representative": "Oficina Representativa",
+      "virtual": "Oficina Virtual"
+    },
+    "disclaimer": "Ciertas oficinas operan de manera virtual o representativa a través de Regus Business Centres. Estas ubicaciones apoyan el compromiso de clientes y la coordinación regional.",
+    "ctaTitle": "Conéctese Con Nosotros Globalmente",
+    "ctaDesc": "Contáctenos para discutir sus requisitos de capital con nuestros equipos regionales."
+  },
+  "contact": {
+    "subtitle": "Contacto",
+    "headline": "Contacte al Equipo de Asesoría",
+    "description": "Envíe su consulta y nuestro equipo responderá en 2-3 días hábiles.",
+    "form": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "company": "Empresa / Organización",
+      "inquiryType": "Naturaleza de la Consulta",
+      "selectType": "Seleccione el tipo de consulta",
+      "message": "Mensaje",
+      "messagePlaceholder": "Por favor describa su consulta, requisitos de capital o cómo podemos ayudarle...",
+      "types": {
+        "advisory": "Compromiso de Asesoría",
+        "funding": "Consulta de Financiamiento o Capital",
+        "partnership": "Alianza Estratégica",
+        "general": "Consulta General"
+      }
+    },
+    "disclaimer": "Las envíos no son vinculantes y están sujetos a revisión interna.",
+    "contactInfo": "Información de Contacto",
+    "emailLabel": "Correo",
+    "phoneLabel": "Teléfono",
+    "headOfficeLabel": "Oficina Principal",
+    "toast": {
+      "title": "Consulta Enviada",
+      "description": "Gracias por su consulta. Nuestro equipo revisará y responderá en 2-3 días hábiles."
+    }
+  },
+  "footer": {
+    "tagline": "Asesoría de capital independiente y estructuración de inversiones en los mercados globales.",
+    "disclaimer": "Este sitio web se proporciona solo con fines informativos y no constituye una oferta, solicitud o compromiso de proporcionar servicios financieros o financiamiento."
+  }
+}

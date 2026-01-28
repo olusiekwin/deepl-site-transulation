@@ -1,0 +1,455 @@
+{
+  "common": {
+    "engageUs": "Engage Us",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "contactUs": "Contact Us",
+    "submitInquiry": "Submit Inquiry",
+    "submitting": "Submitting...",
+    "services": "Services",
+    "company": "Company",
+    "connect": "Connect",
+    "allServices": "All Services",
+    "responseTime": "Response Time",
+    "responseTimeDesc": "Our team typically responds within 2-3 business days. For urgent matters, please indicate in your message."
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "sectors": "Sectors",
+    "partners": "Capital Partners",
+    "process": "Process",
+    "governance": "Governance",
+    "insights": "Insights",
+    "globalPresence": "Global Presence",
+    "contact": "Contact"
+  },
+  "home": {
+    "subtitle": "Independent Capital Advisory",
+    "headline": "Capital Advisory and Investment Structuring",
+    "description": "We support enterprises, project sponsors, and public institutions in structuring capital, engaging investors, and executing disciplined financing strategies across global markets.",
+    "cta": "Engage the Advisory Team",
+    "ourServices": "Our Services",
+    "platformSubtitle": "Our Platform",
+    "platformTitle": "Disciplined Capital Structuring",
+    "platformDesc": "We operate as a capital advisory and transaction support platform, working with qualified clients to design financing structures, improve capital readiness, and facilitate engagement with institutional capital partners.",
+    "platformDesc2": "Our work is guided by governance, risk discipline, and long-term alignment. We prioritize transparent processes and sustainable outcomes over transactional volume.",
+    "learnApproach": "Learn About Our Approach",
+    "governanceLed": "Governance-Led",
+    "governanceDesc": "Ethical standards and regulatory awareness",
+    "riskDisciplined": "Risk Disciplined",
+    "riskDesc": "Comprehensive risk identification and mitigation",
+    "longTermAligned": "Long-Term Aligned",
+    "longTermDesc": "Sustainable partnerships over quick transactions",
+    "servicesSubtitle": "Our Services",
+    "servicesTitle": "Core Service Pillars",
+    "servicesDesc": "Comprehensive advisory and transaction support services across the capital lifecycle.",
+    "sectorsSubtitle": "Sectors Served",
+    "sectorsTitle": "Deep Sector Expertise",
+    "sectorsDesc": "We work across multiple sectors, applying specialized knowledge and established networks to support complex capital requirements.",
+    "exploreAllSectors": "Explore All Sectors",
+    "globalReach": "Global Reach",
+    "globalReachDesc": "Our advisory platform spans five continents, providing localized expertise with global perspective.",
+    "ctaTitle": "Ready to Structure Your Capital Strategy?",
+    "ctaDesc": "Engage our advisory team to discuss your capital requirements and explore structured financing solutions."
+  },
+  "about": {
+    "subtitle": "About Us",
+    "headline": "Who We Are",
+    "description": "An independent capital advisory firm focused on supporting clients through complex financing and investment processes across multiple regions and sectors.",
+    "mandateSubtitle": "Our Mandate",
+    "mandateTitle": "Enabling Access to Appropriate Capital",
+    "mandateDesc": "Our mandate is to assist clients in accessing appropriate capital by improving investment readiness, structuring transactions responsibly, and facilitating engagement with suitable funding partners.",
+    "mandateDesc2": "We work with enterprises, project sponsors, and public institutions that require sophisticated capital advisory support. Our focus is on creating sustainable financing solutions that serve long-term objectives.",
+    "clientFocus": "Client Focus",
+    "clientFocusItems": [
+      "Corporates seeking growth or expansion capital",
+      "Project sponsors and developers",
+      "Public and quasi-public entities",
+      "Investment holding companies",
+      "Institutional investors seeking deal flow"
+    ],
+    "approachSubtitle": "Our Approach",
+    "approachTitle": "Disciplined, Process-Driven Advisory",
+    "approachDesc": "We apply a structured approach that emphasizes rigor, risk management, and alignment.",
+    "values": [
+      {
+        "title": "Financial and Structural Rigor",
+        "description": "Every engagement is grounded in robust financial analysis and sound structural design."
+      },
+      {
+        "title": "Risk Identification and Mitigation",
+        "description": "We proactively identify risks and develop strategies to address them effectively."
+      },
+      {
+        "title": "Transparency and Governance",
+        "description": "Our processes prioritize clear communication and adherence to governance standards."
+      },
+      {
+        "title": "Sponsor-Investor Alignment",
+        "description": "We structure transactions to ensure alignment between all stakeholders."
+      }
+    ],
+    "governanceSubtitle": "Leadership Philosophy",
+    "governanceTitle": "Accountability and Independence",
+    "governanceEthics": "Governance & Ethics",
+    "governanceEthicsDesc": "We operate under strict ethical standards, prioritizing integrity and responsible advisory practices in all engagements.",
+    "ethicsItems": [
+      "Confidentiality and data protection",
+      "Integrity in all dealings",
+      "Responsible advisory practices",
+      "Compliance with applicable laws",
+      "Regulatory awareness",
+      "Professional standards adherence"
+    ],
+    "governanceDesc": "Our leadership philosophy emphasizes accountability, long-term relationships, and advisory independence. We focus on delivering sound analysis and structured guidance rather than promotional outcomes.",
+    "governanceDesc2": "All engagements are conducted in accordance with applicable laws, regulatory expectations, and professional standards. We maintain clear boundaries and transparent communication throughout every advisory relationship.",
+    "learnGovernance": "Learn About Our Governance"
+  },
+  "services": {
+    "subtitle": "Our Services",
+    "headline": "Advisory & Transaction Support",
+    "description": "We provide comprehensive advisory and transaction support services across the capital lifecycle, from early-stage preparation to execution and post-transaction advisory.",
+    "ctaTitle": "Discuss Your Capital Requirements",
+    "ctaDesc": "Our team is ready to understand your needs and develop a tailored advisory approach.",
+    "capitalAdvisory": {
+      "title": "Capital Advisory",
+      "shortDesc": "Strategic capital strategy development aligned with your business objectives and risk profile.",
+      "headline": "Strategic Capital Strategy",
+      "description": "Defining appropriate capital strategies aligned with your business model, risk profile, and growth objectives.",
+      "overview": "Our Capital Advisory services support clients in defining appropriate capital strategies aligned with their business models, risk profiles, and growth objectives. We provide independent, objective guidance to help clients navigate complex capital markets and identify optimal financing solutions.",
+      "whoIsFor": [
+        "Corporates seeking growth or expansion capital",
+        "Project sponsors and developers",
+        "Public and quasi-public entities",
+        "Investment holding companies"
+      ],
+      "whatWeDo": [
+        "Capital strategy development",
+        "Funding option analysis (debt, equity, blended finance)",
+        "Investor positioning and preparation",
+        "Transaction planning and sequencing",
+        "Market analysis and benchmarking"
+      ],
+      "outcomes": "Clients gain clarity on capital options, improved investor readiness, and structured engagement with appropriate funding partners."
+    },
+    "projectFinance": {
+      "title": "Project & Structured Finance",
+      "shortDesc": "Comprehensive advisory for complex infrastructure, energy, and development projects.",
+      "headline": "Complex Project Advisory",
+      "description": "Comprehensive advisory for infrastructure, energy, and large-scale development initiatives requiring structured financing solutions.",
+      "overview": "We advise on the structuring and financing of complex projects, including infrastructure, energy, and large-scale development initiatives. Our team brings deep experience in project finance structures and stakeholder coordination.",
+      "scope": [
+        "Financial structuring and modeling",
+        "Capital stack design and optimization",
+        "Lender and investor coordination",
+        "Due diligence support and management",
+        "Risk allocation frameworks",
+        "Contract and term sheet advisory"
+      ],
+      "outcomes": "All project advisory engagements are evaluated based on risk allocation, commercial viability, and long-term sustainability. We help clients navigate complex multi-stakeholder environments to achieve optimal financing outcomes.",
+      "importantNote": "Project finance advisory requires extensive due diligence and stakeholder alignment. Timeline and outcomes depend on project complexity and market conditions."
+    },
+    "privateCredit": {
+      "title": "Private Credit & Lending Solutions",
+      "shortDesc": "Access to private credit solutions through structured advisory and lender engagement.",
+      "headline": "Private Credit Advisory",
+      "description": "Advisory and facilitation services for evaluating and accessing private credit solutions through structured lender engagement.",
+      "overview": "We assist clients in evaluating and accessing private credit solutions through structured advisory and lender engagement. Our approach focuses on matching client requirements with appropriate private credit providers.",
+      "whatWeDo": [
+        "Assess financing requirements and eligibility",
+        "Prepare lending documentation and information memoranda",
+        "Facilitate engagement with private lenders and credit funds",
+        "Support negotiation and closing processes",
+        "Structure appropriate security and covenant frameworks"
+      ],
+      "outcomes": "Clients benefit from structured access to private credit markets, improved documentation quality, and professional representation in lender discussions.",
+      "importantNote": "We do not provide direct lending and do not guarantee financing outcomes. Our role is advisory and facilitation only."
+    },
+    "investmentStructuring": {
+      "title": "Investment Structuring & Syndication",
+      "shortDesc": "Coordination of co-investment and syndication arrangements for institutional investors.",
+      "headline": "Investment Structuring",
+      "description": "Supporting the structuring of investment opportunities and coordination of co-investment and syndication arrangements.",
+      "overview": "We support the structuring of investment opportunities and the coordination of co-investment and syndication arrangements. Our services help sponsors and investors achieve efficient capital deployment through well-structured investment frameworks.",
+      "scope": [
+        "Investment vehicle structuring and design",
+        "Co-investment framework development",
+        "Investor coordination and syndication",
+        "Transaction governance support",
+        "Terms negotiation advisory",
+        "Investor reporting frameworks"
+      ],
+      "outcomes": "Clients achieve efficient capital deployment through well-structured investment vehicles with appropriate governance and alignment mechanisms."
+    },
+    "strategicPartnerships": {
+      "title": "Strategic Capital Partnerships",
+      "shortDesc": "Facilitation of long-term partnerships between sponsors and institutional capital providers.",
+      "headline": "Strategic Partnerships",
+      "description": "Facilitating strategic capital partnerships between project sponsors, institutional investors, and long-term capital providers.",
+      "overview": "We facilitate strategic capital partnerships between project sponsors, institutional investors, and long-term capital providers. Our focus is on creating sustainable partnerships that deliver value for all parties.",
+      "scope": [
+        "Partnership strategy development",
+        "Investor identification and outreach",
+        "Alignment of interests framework",
+        "Risk-adjusted return structuring",
+        "Governance and reporting standards",
+        "Long-term relationship management"
+      ],
+      "outcomes": "Successful strategic partnerships built on clear alignment, appropriate risk sharing, and robust governance frameworks."
+    },
+    "financialReadiness": {
+      "title": "Investment & Financial Readiness",
+      "shortDesc": "Preparation of financial, operational, and governance frameworks for capital engagement.",
+      "headline": "Capital Readiness",
+      "description": "Preparing clients for capital engagement by strengthening financial, operational, and governance frameworks.",
+      "overview": "We assist clients in preparing for capital engagement by strengthening financial, operational, and governance frameworks. Our readiness advisory ensures clients present professionally and credibly to potential capital partners.",
+      "whatWeDo": [
+        "Financial modeling and forecasting",
+        "Documentation preparation and review",
+        "Internal controls and reporting readiness",
+        "Investor presentation support",
+        "Management team preparation",
+        "Due diligence readiness assessment"
+      ],
+      "outcomes": "Clients achieve improved capital readiness, professional presentation materials, and confidence in engaging with institutional investors and lenders."
+    },
+    "detail": {
+      "overview": "Overview",
+      "whoIsFor": "Who This Is For",
+      "whatWeDo": "What We Do",
+      "scope": "Scope of Support",
+      "outcomes": "Outcomes",
+      "importantNote": "Important Note",
+      "readyToBegin": "Ready to Begin?",
+      "readyDesc": "Engage our advisory team to discuss your specific requirements.",
+      "otherServices": "Other Services"
+    }
+  },
+  "sectors": {
+    "subtitle": "Sectors We Serve",
+    "headline": "Deep Sector Expertise",
+    "description": "We work across multiple sectors, applying specialized knowledge and established networks to support complex capital requirements.",
+    "infrastructure": {
+      "title": "Infrastructure & PPPs",
+      "description": "Advisory support for large-scale infrastructure and public-private partnership projects with complex capital requirements. We work across transportation, utilities, and social infrastructure sectors."
+    },
+    "energy": {
+      "title": "Energy & Utilities",
+      "description": "Support for conventional and renewable energy projects, including generation, transmission, and utility infrastructure. Our experience spans solar, wind, thermal, and grid infrastructure."
+    },
+    "realEstate": {
+      "title": "Real Estate & Housing",
+      "description": "Capital structuring for commercial, residential, and mixed-use developments. We support developers and investors across the real estate value chain."
+    },
+    "industrial": {
+      "title": "Industrial & Manufacturing",
+      "description": "Growth and expansion financing for industrial operators and manufacturers. We understand the capital requirements of production facilities and supply chain infrastructure."
+    },
+    "agriculture": {
+      "title": "Agriculture & Agribusiness",
+      "description": "Structured finance advisory for agricultural value chains and agribusiness platforms. Our expertise covers production, processing, and distribution infrastructure."
+    },
+    "financialServices": {
+      "title": "Financial Services",
+      "description": "Advisory support for financial institutions, investment vehicles, and regulated entities. We help financial services firms optimize their capital structures."
+    },
+    "publicSector": {
+      "title": "Public Sector & Development",
+      "description": "Capital advisory and transaction support for public and development-oriented initiatives. We work with governments and development agencies on financing frameworks."
+    },
+    "ctaSubtitle": "Cross-Sector Experience",
+    "ctaTitle": "Sector-Specific Solutions",
+    "ctaDesc": "Our advisory team brings specialized knowledge to each sector, understanding the unique capital requirements and market dynamics.",
+    "discussSector": "Discuss Your Sector"
+  },
+  "partners": {
+    "subtitle": "Capital Partners & Networks",
+    "headline": "Institutional Capital Ecosystem",
+    "description": "We maintain relationships with a broad network of institutional capital providers, facilitating structured engagement between qualified sponsors and appropriate funding partners.",
+    "introTitle": "Our Role as Facilitator",
+    "introDesc": "We position ourselves as a structuring and facilitation platform, not a fund. Our role is to prepare clients for capital engagement and coordinate professional introductions to appropriate institutional partners.",
+    "introDesc2": "All capital partner engagements are subject to rigorous qualification, due diligence, and alignment assessment.",
+    "partnerTypes": "Partner Categories",
+    "institutional": {
+      "title": "Institutional Investors",
+      "description": "Pension funds, sovereign wealth funds, and asset managers seeking structured investment opportunities across infrastructure, real estate, and private markets."
+    },
+    "dfi": {
+      "title": "Development Finance Institutions",
+      "description": "Multilateral and bilateral development banks focused on infrastructure, energy, and development projects in emerging and frontier markets."
+    },
+    "privateLenders": {
+      "title": "Private Lenders & Credit Funds",
+      "description": "Alternative credit providers, direct lenders, and specialty finance firms providing structured debt solutions across sectors."
+    },
+    "familyOffices": {
+      "title": "Family Offices",
+      "description": "Single and multi-family offices seeking direct investment opportunities, co-investment arrangements, and long-term capital deployment."
+    },
+    "strategic": {
+      "title": "Strategic Co-Investors",
+      "description": "Corporate investors, industry operators, and strategic partners seeking aligned investment opportunities and operational partnerships."
+    },
+    "disclaimer": "Partnership Disclaimer",
+    "disclaimerText": "We do not guarantee introductions, funding outcomes, or investment commitments. All capital partner engagements are subject to independent assessment, due diligence, and commercial negotiation.",
+    "ctaTitle": "Discuss Capital Partnership Opportunities",
+    "ctaDesc": "Contact our team to explore how we can facilitate structured engagement with appropriate capital partners."
+  },
+  "process": {
+    "subtitle": "Process & Methodology",
+    "headline": "Structured Advisory Process",
+    "description": "Each engagement follows a documented, disciplined process aligned with best practices in capital advisory.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Initial Assessment",
+        "description": "We begin with a comprehensive assessment of your capital requirements, business context, and strategic objectives. This phase establishes the foundation for our advisory relationship."
+      },
+      {
+        "number": "02",
+        "title": "Capital Readiness Review",
+        "description": "Our team conducts a thorough review of your financial, operational, and governance frameworks to identify areas for improvement before engaging with capital providers."
+      },
+      {
+        "number": "03",
+        "title": "Structuring & Positioning",
+        "description": "We develop appropriate financing structures and position your opportunity for optimal engagement with target investors and lenders."
+      },
+      {
+        "number": "04",
+        "title": "Investor Engagement",
+        "description": "Systematic engagement with qualified capital providers, managing the process professionally and maintaining appropriate confidentiality."
+      },
+      {
+        "number": "05",
+        "title": "Due Diligence Coordination",
+        "description": "We coordinate the due diligence process, managing information flow and ensuring timely responses to investor and lender inquiries."
+      },
+      {
+        "number": "06",
+        "title": "Transaction Support",
+        "description": "Active support through negotiation, documentation, and closing processes to ensure successful transaction completion."
+      },
+      {
+        "number": "07",
+        "title": "Post-Transaction Advisory",
+        "description": "Continued advisory support following transaction close, including reporting frameworks and stakeholder relationship management."
+      }
+    ],
+    "ctaTitle": "Begin Your Advisory Engagement",
+    "ctaDesc": "Contact our team to discuss how our structured process can support your capital requirements.",
+    "startConversation": "Start the Conversation"
+  },
+  "governance": {
+    "subtitle": "Governance, Risk & Compliance",
+    "headline": "Governance-Led Advisory",
+    "description": "We operate under a governance-led advisory framework that prioritizes ethical conduct, risk management, and regulatory awareness.",
+    "principlesSubtitle": "Core Principles",
+    "principlesTitle": "Our Governance Framework",
+    "principlesDesc": "Our advisory practice is built on foundational principles that guide every engagement.",
+    "principles": [
+      {
+        "title": "Ethical Conduct",
+        "description": "We maintain the highest ethical standards in all advisory activities, prioritizing client interests and market integrity."
+      },
+      {
+        "title": "Risk Identification",
+        "description": "Comprehensive risk assessment and mitigation strategies are integral to every engagement we undertake."
+      },
+      {
+        "title": "AML & KYC Awareness",
+        "description": "We maintain awareness of anti-money laundering requirements and conduct appropriate know-your-customer processes."
+      },
+      {
+        "title": "Confidentiality",
+        "description": "Client information is protected with strict confidentiality protocols and data protection measures."
+      },
+      {
+        "title": "Regulatory Compliance",
+        "description": "All engagements are conducted in accordance with applicable laws and regulatory expectations."
+      }
+    ],
+    "regulatoryTitle": "Regulatory Notice",
+    "regulatoryText1": "We do not provide regulated financial services in jurisdictions where authorization is required unless explicitly stated.",
+    "regulatoryText2": "Our advisory services are provided on a non-binding basis and do not constitute investment advice, financial advice, or recommendations to buy, sell, or hold any securities or financial instruments.",
+    "regulatoryText3": "Clients should seek independent professional advice appropriate to their circumstances before making any investment or financing decisions.",
+    "ctaTitle": "Questions About Our Approach?",
+    "ctaDesc": "Contact our team to discuss our governance framework and advisory standards."
+  },
+  "insights": {
+    "subtitle": "Insights & Publications",
+    "headline": "Market Perspectives",
+    "description": "Informational content on capital structuring trends, investment frameworks, and market developments across emerging and developed markets.",
+    "topics": {
+      "structuring": "Capital Structuring Trends",
+      "frameworks": "Investment Frameworks",
+      "markets": "Market Developments"
+    },
+    "articles": "articles",
+    "disclaimer": "Publications are informational and do not constitute investment advice. Content is provided for general informational purposes only.",
+    "stayInformed": "Stay Informed",
+    "stayInformedDesc": "Contact us to discuss our latest perspectives on capital markets and financing trends.",
+    "contactTeam": "Contact Our Team"
+  },
+  "globalPresence": {
+    "subtitle": "Global Presence",
+    "headline": "Worldwide Advisory Platform",
+    "description": "Our advisory platform spans five continents, providing localized expertise with global perspective.",
+    "headOffice": "Head Office",
+    "headOfficeDesc": "Primary Coordination Office",
+    "headOfficeLocation": "City, Country",
+    "regionalSubtitle": "Regional Network",
+    "regionalTitle": "Virtual & Representative Offices",
+    "regionalDesc": "Operated via Regus Business Centres for regional coordination and client engagement.",
+    "regions": {
+      "africa": "Africa",
+      "middleEast": "Middle East",
+      "europe": "Europe",
+      "asia": "Asia",
+      "northAmerica": "North America"
+    },
+    "officeTypes": {
+      "representative": "Representative Office",
+      "virtual": "Virtual Office"
+    },
+    "disclaimer": "Certain offices operate on a virtual or representative basis through Regus Business Centres. These locations support client engagement and regional coordination and do not constitute regulated operating branches unless explicitly stated.",
+    "ctaTitle": "Connect With Us Globally",
+    "ctaDesc": "Reach out to discuss your capital requirements with our regional teams."
+  },
+  "contact": {
+    "subtitle": "Contact",
+    "headline": "Engage the Advisory Team",
+    "description": "Submit your inquiry and our team will respond within 2-3 business days.",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "company": "Company / Organization",
+      "inquiryType": "Nature of Inquiry",
+      "selectType": "Select inquiry type",
+      "message": "Message",
+      "messagePlaceholder": "Please describe your inquiry, capital requirements, or how we may assist you...",
+      "types": {
+        "advisory": "Advisory Engagement",
+        "funding": "Funding or Capital Inquiry",
+        "partnership": "Strategic Partnership",
+        "general": "General Inquiry"
+      }
+    },
+    "disclaimer": "Submissions are non-binding and subject to internal review.",
+    "contactInfo": "Contact Information",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "headOfficeLabel": "Head Office",
+    "toast": {
+      "title": "Inquiry Submitted",
+      "description": "Thank you for your inquiry. Our team will review and respond within 2-3 business days."
+    }
+  },
+  "footer": {
+    "tagline": "Independent capital advisory and investment structuring across global markets.",
+    "disclaimer": "This website is provided for informational purposes only and does not constitute an offer, solicitation, or commitment to provide financial services or funding."
+  }
+}

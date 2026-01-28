@@ -1,0 +1,455 @@
+{
+  "common": {
+    "engageUs": "Nous Contacter",
+    "learnMore": "En Savoir Plus",
+    "readMore": "Lire la Suite",
+    "contactUs": "Contactez-Nous",
+    "submitInquiry": "Soumettre la Demande",
+    "submitting": "Envoi en cours...",
+    "services": "Services",
+    "company": "Société",
+    "connect": "Contact",
+    "allServices": "Tous les Services",
+    "responseTime": "Délai de Réponse",
+    "responseTimeDesc": "Notre équipe répond généralement sous 2 à 3 jours ouvrables. Pour les demandes urgentes, veuillez l'indiquer dans votre message."
+  },
+  "nav": {
+    "about": "À Propos",
+    "services": "Services",
+    "sectors": "Secteurs",
+    "partners": "Partenaires Capitaux",
+    "process": "Processus",
+    "governance": "Gouvernance",
+    "insights": "Perspectives",
+    "globalPresence": "Présence Mondiale",
+    "contact": "Contact"
+  },
+  "home": {
+    "subtitle": "Conseil en Capital Indépendant",
+    "headline": "Conseil en Capital et Structuration d'Investissements",
+    "description": "Nous accompagnons les entreprises, les promoteurs de projets et les institutions publiques dans la structuration du capital, l'engagement des investisseurs et l'exécution de stratégies de financement disciplinées sur les marchés mondiaux.",
+    "cta": "Contacter l'Équipe Conseil",
+    "ourServices": "Nos Services",
+    "platformSubtitle": "Notre Plateforme",
+    "platformTitle": "Structuration de Capital Disciplinée",
+    "platformDesc": "Nous opérons en tant que plateforme de conseil en capital et de soutien aux transactions, travaillant avec des clients qualifiés pour concevoir des structures de financement, améliorer la préparation au capital et faciliter l'engagement avec des partenaires institutionnels.",
+    "platformDesc2": "Notre travail est guidé par la gouvernance, la discipline du risque et l'alignement à long terme. Nous privilégions les processus transparents et les résultats durables.",
+    "learnApproach": "Découvrir Notre Approche",
+    "governanceLed": "Gouvernance",
+    "governanceDesc": "Normes éthiques et sensibilisation réglementaire",
+    "riskDisciplined": "Discipline du Risque",
+    "riskDesc": "Identification et atténuation complètes des risques",
+    "longTermAligned": "Alignement Long Terme",
+    "longTermDesc": "Partenariats durables plutôt que transactions rapides",
+    "servicesSubtitle": "Nos Services",
+    "servicesTitle": "Piliers de Services Essentiels",
+    "servicesDesc": "Services complets de conseil et de soutien aux transactions tout au long du cycle de vie du capital.",
+    "sectorsSubtitle": "Secteurs Servis",
+    "sectorsTitle": "Expertise Sectorielle Approfondie",
+    "sectorsDesc": "Nous travaillons dans plusieurs secteurs, appliquant des connaissances spécialisées et des réseaux établis pour répondre aux besoins complexes en capital.",
+    "exploreAllSectors": "Explorer Tous les Secteurs",
+    "globalReach": "Portée Mondiale",
+    "globalReachDesc": "Notre plateforme de conseil s'étend sur cinq continents, offrant une expertise locale avec une perspective globale.",
+    "ctaTitle": "Prêt à Structurer Votre Stratégie de Capital?",
+    "ctaDesc": "Engagez notre équipe de conseil pour discuter de vos besoins en capital et explorer des solutions de financement structurées."
+  },
+  "about": {
+    "subtitle": "À Propos",
+    "headline": "Qui Sommes-Nous",
+    "description": "Un cabinet de conseil en capital indépendant axé sur l'accompagnement des clients dans des processus complexes de financement et d'investissement à travers plusieurs régions et secteurs.",
+    "mandateSubtitle": "Notre Mandat",
+    "mandateTitle": "Faciliter l'Accès au Capital Approprié",
+    "mandateDesc": "Notre mandat est d'aider les clients à accéder au capital approprié en améliorant leur préparation à l'investissement, en structurant les transactions de manière responsable et en facilitant l'engagement avec des partenaires de financement adaptés.",
+    "mandateDesc2": "Nous travaillons avec des entreprises, des promoteurs de projets et des institutions publiques qui nécessitent un soutien sophistiqué en conseil en capital.",
+    "clientFocus": "Focus Client",
+    "clientFocusItems": [
+      "Entreprises en quête de capital de croissance ou d'expansion",
+      "Promoteurs et développeurs de projets",
+      "Entités publiques et quasi-publiques",
+      "Sociétés de portefeuille d'investissement",
+      "Investisseurs institutionnels recherchant des opportunités"
+    ],
+    "approachSubtitle": "Notre Approche",
+    "approachTitle": "Conseil Discipliné et Orienté Processus",
+    "approachDesc": "Nous appliquons une approche structurée qui met l'accent sur la rigueur, la gestion des risques et l'alignement.",
+    "values": [
+      {
+        "title": "Rigueur Financière et Structurelle",
+        "description": "Chaque engagement repose sur une analyse financière robuste et une conception structurelle solide."
+      },
+      {
+        "title": "Identification et Atténuation des Risques",
+        "description": "Nous identifions proactivement les risques et développons des stratégies pour les traiter efficacement."
+      },
+      {
+        "title": "Transparence et Gouvernance",
+        "description": "Nos processus privilégient une communication claire et le respect des normes de gouvernance."
+      },
+      {
+        "title": "Alignement Sponsor-Investisseur",
+        "description": "Nous structurons les transactions pour assurer l'alignement entre toutes les parties prenantes."
+      }
+    ],
+    "governanceSubtitle": "Philosophie de Leadership",
+    "governanceTitle": "Responsabilité et Indépendance",
+    "governanceEthics": "Gouvernance et Éthique",
+    "governanceEthicsDesc": "Nous opérons selon des normes éthiques strictes, privilégiant l'intégrité et des pratiques de conseil responsables.",
+    "ethicsItems": [
+      "Confidentialité et protection des données",
+      "Intégrité dans toutes les relations",
+      "Pratiques de conseil responsables",
+      "Conformité aux lois applicables",
+      "Sensibilisation réglementaire",
+      "Respect des normes professionnelles"
+    ],
+    "governanceDesc": "Notre philosophie de leadership met l'accent sur la responsabilité, les relations à long terme et l'indépendance du conseil.",
+    "governanceDesc2": "Tous les engagements sont menés conformément aux lois applicables, aux attentes réglementaires et aux normes professionnelles.",
+    "learnGovernance": "Découvrir Notre Gouvernance"
+  },
+  "services": {
+    "subtitle": "Nos Services",
+    "headline": "Conseil et Soutien aux Transactions",
+    "description": "Nous fournissons des services complets de conseil et de soutien aux transactions tout au long du cycle de vie du capital, de la préparation initiale à l'exécution et au conseil post-transaction.",
+    "ctaTitle": "Discutez de Vos Besoins en Capital",
+    "ctaDesc": "Notre équipe est prête à comprendre vos besoins et à développer une approche de conseil sur mesure.",
+    "capitalAdvisory": {
+      "title": "Conseil en Capital",
+      "shortDesc": "Développement de stratégie de capital alignée sur vos objectifs commerciaux et votre profil de risque.",
+      "headline": "Stratégie de Capital Stratégique",
+      "description": "Définition de stratégies de capital appropriées alignées sur votre modèle d'affaires, profil de risque et objectifs de croissance.",
+      "overview": "Nos services de conseil en capital aident les clients à définir des stratégies de capital appropriées alignées sur leurs modèles d'affaires, profils de risque et objectifs de croissance.",
+      "whoIsFor": [
+        "Entreprises en quête de capital de croissance ou d'expansion",
+        "Promoteurs et développeurs de projets",
+        "Entités publiques et quasi-publiques",
+        "Sociétés de portefeuille d'investissement"
+      ],
+      "whatWeDo": [
+        "Développement de stratégie de capital",
+        "Analyse des options de financement (dette, capitaux propres, financement mixte)",
+        "Positionnement et préparation des investisseurs",
+        "Planification et séquencement des transactions",
+        "Analyse de marché et benchmarking"
+      ],
+      "outcomes": "Les clients gagnent en clarté sur les options de capital, améliorent leur préparation aux investisseurs et structurent l'engagement avec des partenaires de financement appropriés."
+    },
+    "projectFinance": {
+      "title": "Finance de Projet et Structurée",
+      "shortDesc": "Conseil complet pour les projets complexes d'infrastructure, d'énergie et de développement.",
+      "headline": "Conseil en Projets Complexes",
+      "description": "Conseil complet pour les initiatives d'infrastructure, d'énergie et de développement à grande échelle nécessitant des solutions de financement structurées.",
+      "overview": "Nous conseillons sur la structuration et le financement de projets complexes, y compris l'infrastructure, l'énergie et les initiatives de développement à grande échelle.",
+      "scope": [
+        "Structuration et modélisation financière",
+        "Conception et optimisation de la structure de capital",
+        "Coordination des prêteurs et investisseurs",
+        "Soutien et gestion de la due diligence",
+        "Cadres d'allocation des risques",
+        "Conseil sur les contrats et term sheets"
+      ],
+      "outcomes": "Tous les engagements de conseil en projet sont évalués sur la base de l'allocation des risques, de la viabilité commerciale et de la durabilité à long terme.",
+      "importantNote": "Le conseil en finance de projet nécessite une due diligence approfondie et un alignement des parties prenantes."
+    },
+    "privateCredit": {
+      "title": "Crédit Privé et Solutions de Prêt",
+      "shortDesc": "Accès aux solutions de crédit privé par le conseil structuré et l'engagement des prêteurs.",
+      "headline": "Conseil en Crédit Privé",
+      "description": "Services de conseil et de facilitation pour l'évaluation et l'accès aux solutions de crédit privé par l'engagement structuré des prêteurs.",
+      "overview": "Nous aidons les clients à évaluer et accéder aux solutions de crédit privé par le conseil structuré et l'engagement des prêteurs.",
+      "whatWeDo": [
+        "Évaluation des besoins de financement et de l'éligibilité",
+        "Préparation de la documentation de prêt et des mémorandums d'information",
+        "Facilitation de l'engagement avec les prêteurs privés et fonds de crédit",
+        "Soutien aux processus de négociation et de clôture",
+        "Structuration des cadres de garantie et de covenants appropriés"
+      ],
+      "outcomes": "Les clients bénéficient d'un accès structuré aux marchés du crédit privé et d'une représentation professionnelle.",
+      "importantNote": "Nous ne fournissons pas de prêt direct et ne garantissons pas les résultats de financement. Notre rôle est uniquement de conseil et de facilitation."
+    },
+    "investmentStructuring": {
+      "title": "Structuration d'Investissement et Syndication",
+      "shortDesc": "Coordination des arrangements de co-investissement et de syndication pour les investisseurs institutionnels.",
+      "headline": "Structuration d'Investissement",
+      "description": "Soutien à la structuration d'opportunités d'investissement et coordination des arrangements de co-investissement et de syndication.",
+      "overview": "Nous soutenons la structuration d'opportunités d'investissement et la coordination des arrangements de co-investissement et de syndication.",
+      "scope": [
+        "Structuration et conception de véhicules d'investissement",
+        "Développement de cadres de co-investissement",
+        "Coordination des investisseurs et syndication",
+        "Soutien à la gouvernance des transactions",
+        "Conseil en négociation des termes",
+        "Cadres de reporting aux investisseurs"
+      ],
+      "outcomes": "Les clients réalisent un déploiement de capital efficace grâce à des véhicules d'investissement bien structurés."
+    },
+    "strategicPartnerships": {
+      "title": "Partenariats Capitaux Stratégiques",
+      "shortDesc": "Facilitation de partenariats à long terme entre sponsors et fournisseurs de capital institutionnel.",
+      "headline": "Partenariats Stratégiques",
+      "description": "Facilitation de partenariats capitaux stratégiques entre promoteurs de projets, investisseurs institutionnels et fournisseurs de capital à long terme.",
+      "overview": "Nous facilitons les partenariats capitaux stratégiques entre promoteurs de projets, investisseurs institutionnels et fournisseurs de capital à long terme.",
+      "scope": [
+        "Développement de stratégie de partenariat",
+        "Identification et prospection d'investisseurs",
+        "Cadre d'alignement des intérêts",
+        "Structuration du rendement ajusté au risque",
+        "Normes de gouvernance et de reporting",
+        "Gestion des relations à long terme"
+      ],
+      "outcomes": "Partenariats stratégiques réussis construits sur un alignement clair, un partage des risques approprié et des cadres de gouvernance robustes."
+    },
+    "financialReadiness": {
+      "title": "Préparation à l'Investissement et Financière",
+      "shortDesc": "Préparation des cadres financiers, opérationnels et de gouvernance pour l'engagement en capital.",
+      "headline": "Préparation au Capital",
+      "description": "Préparer les clients à l'engagement en capital en renforçant les cadres financiers, opérationnels et de gouvernance.",
+      "overview": "Nous aidons les clients à se préparer à l'engagement en capital en renforçant les cadres financiers, opérationnels et de gouvernance.",
+      "whatWeDo": [
+        "Modélisation et prévisions financières",
+        "Préparation et révision de la documentation",
+        "Contrôles internes et préparation au reporting",
+        "Soutien aux présentations investisseurs",
+        "Préparation de l'équipe de direction",
+        "Évaluation de la préparation à la due diligence"
+      ],
+      "outcomes": "Les clients atteignent une meilleure préparation au capital et une confiance accrue dans l'engagement avec les investisseurs institutionnels."
+    },
+    "detail": {
+      "overview": "Aperçu",
+      "whoIsFor": "Pour Qui",
+      "whatWeDo": "Ce Que Nous Faisons",
+      "scope": "Périmètre d'Intervention",
+      "outcomes": "Résultats",
+      "importantNote": "Note Importante",
+      "readyToBegin": "Prêt à Commencer?",
+      "readyDesc": "Engagez notre équipe de conseil pour discuter de vos besoins spécifiques.",
+      "otherServices": "Autres Services"
+    }
+  },
+  "sectors": {
+    "subtitle": "Secteurs Servis",
+    "headline": "Expertise Sectorielle Approfondie",
+    "description": "Nous travaillons dans plusieurs secteurs, appliquant des connaissances spécialisées et des réseaux établis.",
+    "infrastructure": {
+      "title": "Infrastructure et PPP",
+      "description": "Soutien conseil pour les projets d'infrastructure à grande échelle et les partenariats public-privé avec des besoins en capital complexes."
+    },
+    "energy": {
+      "title": "Énergie et Services Publics",
+      "description": "Soutien pour les projets d'énergie conventionnelle et renouvelable, y compris la production, le transport et l'infrastructure des services publics."
+    },
+    "realEstate": {
+      "title": "Immobilier et Logement",
+      "description": "Structuration de capital pour les développements commerciaux, résidentiels et à usage mixte."
+    },
+    "industrial": {
+      "title": "Industrie et Fabrication",
+      "description": "Financement de croissance et d'expansion pour les opérateurs industriels et les fabricants."
+    },
+    "agriculture": {
+      "title": "Agriculture et Agroalimentaire",
+      "description": "Conseil en finance structurée pour les chaînes de valeur agricoles et les plateformes agroalimentaires."
+    },
+    "financialServices": {
+      "title": "Services Financiers",
+      "description": "Soutien conseil pour les institutions financières, les véhicules d'investissement et les entités réglementées."
+    },
+    "publicSector": {
+      "title": "Secteur Public et Développement",
+      "description": "Conseil en capital et soutien aux transactions pour les initiatives publiques et orientées vers le développement."
+    },
+    "ctaSubtitle": "Expérience Intersectorielle",
+    "ctaTitle": "Solutions Sectorielles Spécifiques",
+    "ctaDesc": "Notre équipe de conseil apporte des connaissances spécialisées à chaque secteur.",
+    "discussSector": "Discuter de Votre Secteur"
+  },
+  "partners": {
+    "subtitle": "Partenaires Capitaux et Réseaux",
+    "headline": "Écosystème de Capital Institutionnel",
+    "description": "Nous maintenons des relations avec un large réseau de fournisseurs de capital institutionnel, facilitant l'engagement structuré entre sponsors qualifiés et partenaires de financement appropriés.",
+    "introTitle": "Notre Rôle de Facilitateur",
+    "introDesc": "Nous nous positionnons comme une plateforme de structuration et de facilitation, pas comme un fonds. Notre rôle est de préparer les clients à l'engagement en capital et de coordonner les introductions professionnelles.",
+    "introDesc2": "Tous les engagements avec les partenaires capitaux sont soumis à une qualification rigoureuse, une due diligence et une évaluation de l'alignement.",
+    "partnerTypes": "Catégories de Partenaires",
+    "institutional": {
+      "title": "Investisseurs Institutionnels",
+      "description": "Fonds de pension, fonds souverains et gestionnaires d'actifs recherchant des opportunités d'investissement structurées."
+    },
+    "dfi": {
+      "title": "Institutions de Financement du Développement",
+      "description": "Banques de développement multilatérales et bilatérales axées sur l'infrastructure, l'énergie et les projets de développement."
+    },
+    "privateLenders": {
+      "title": "Prêteurs Privés et Fonds de Crédit",
+      "description": "Fournisseurs de crédit alternatif, prêteurs directs et sociétés de financement spécialisé."
+    },
+    "familyOffices": {
+      "title": "Family Offices",
+      "description": "Family offices uniques et multi-familiaux recherchant des opportunités d'investissement direct et des arrangements de co-investissement."
+    },
+    "strategic": {
+      "title": "Co-Investisseurs Stratégiques",
+      "description": "Investisseurs corporatifs, opérateurs industriels et partenaires stratégiques recherchant des opportunités d'investissement alignées."
+    },
+    "disclaimer": "Avertissement de Partenariat",
+    "disclaimerText": "Nous ne garantissons pas les introductions, les résultats de financement ou les engagements d'investissement.",
+    "ctaTitle": "Discuter des Opportunités de Partenariat en Capital",
+    "ctaDesc": "Contactez notre équipe pour explorer comment nous pouvons faciliter un engagement structuré."
+  },
+  "process": {
+    "subtitle": "Processus et Méthodologie",
+    "headline": "Processus de Conseil Structuré",
+    "description": "Chaque engagement suit un processus documenté et discipliné aligné sur les meilleures pratiques en conseil en capital.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Évaluation Initiale",
+        "description": "Nous commençons par une évaluation complète de vos besoins en capital, du contexte commercial et des objectifs stratégiques."
+      },
+      {
+        "number": "02",
+        "title": "Revue de Préparation au Capital",
+        "description": "Notre équipe effectue une revue approfondie de vos cadres financiers, opérationnels et de gouvernance."
+      },
+      {
+        "number": "03",
+        "title": "Structuration et Positionnement",
+        "description": "Nous développons des structures de financement appropriées et positionnons votre opportunité pour un engagement optimal."
+      },
+      {
+        "number": "04",
+        "title": "Engagement des Investisseurs",
+        "description": "Engagement systématique avec des fournisseurs de capital qualifiés, gérant le processus professionnellement."
+      },
+      {
+        "number": "05",
+        "title": "Coordination de la Due Diligence",
+        "description": "Nous coordonnons le processus de due diligence, gérant le flux d'information et assurant des réponses rapides."
+      },
+      {
+        "number": "06",
+        "title": "Soutien à la Transaction",
+        "description": "Soutien actif à travers la négociation, la documentation et les processus de clôture."
+      },
+      {
+        "number": "07",
+        "title": "Conseil Post-Transaction",
+        "description": "Soutien conseil continu après la clôture de la transaction, y compris les cadres de reporting."
+      }
+    ],
+    "ctaTitle": "Commencer Votre Engagement Conseil",
+    "ctaDesc": "Contactez notre équipe pour discuter de comment notre processus structuré peut soutenir vos besoins en capital.",
+    "startConversation": "Démarrer la Conversation"
+  },
+  "governance": {
+    "subtitle": "Gouvernance, Risque et Conformité",
+    "headline": "Conseil Orienté Gouvernance",
+    "description": "Nous opérons sous un cadre de conseil orienté gouvernance qui privilégie la conduite éthique, la gestion des risques et la sensibilisation réglementaire.",
+    "principlesSubtitle": "Principes Fondamentaux",
+    "principlesTitle": "Notre Cadre de Gouvernance",
+    "principlesDesc": "Notre pratique de conseil est construite sur des principes fondamentaux qui guident chaque engagement.",
+    "principles": [
+      {
+        "title": "Conduite Éthique",
+        "description": "Nous maintenons les plus hautes normes éthiques, privilégiant les intérêts des clients et l'intégrité du marché."
+      },
+      {
+        "title": "Identification des Risques",
+        "description": "L'évaluation complète des risques et les stratégies d'atténuation font partie intégrante de chaque engagement."
+      },
+      {
+        "title": "Sensibilisation LCB et KYC",
+        "description": "Nous maintenons une sensibilisation aux exigences anti-blanchiment et effectuons des processus KYC appropriés."
+      },
+      {
+        "title": "Confidentialité",
+        "description": "Les informations des clients sont protégées par des protocoles stricts de confidentialité."
+      },
+      {
+        "title": "Conformité Réglementaire",
+        "description": "Tous les engagements sont menés conformément aux lois applicables et aux attentes réglementaires."
+      }
+    ],
+    "regulatoryTitle": "Avis Réglementaire",
+    "regulatoryText1": "Nous ne fournissons pas de services financiers réglementés dans les juridictions où une autorisation est requise sauf mention explicite.",
+    "regulatoryText2": "Nos services de conseil sont fournis sur une base non contraignante et ne constituent pas des conseils en investissement.",
+    "regulatoryText3": "Les clients doivent rechercher des conseils professionnels indépendants appropriés à leur situation.",
+    "ctaTitle": "Questions Sur Notre Approche?",
+    "ctaDesc": "Contactez notre équipe pour discuter de notre cadre de gouvernance."
+  },
+  "insights": {
+    "subtitle": "Perspectives et Publications",
+    "headline": "Perspectives du Marché",
+    "description": "Contenu informatif sur les tendances de structuration du capital, les cadres d'investissement et les développements du marché.",
+    "topics": {
+      "structuring": "Tendances de Structuration du Capital",
+      "frameworks": "Cadres d'Investissement",
+      "markets": "Développements du Marché"
+    },
+    "articles": "articles",
+    "disclaimer": "Les publications sont informatives et ne constituent pas des conseils en investissement.",
+    "stayInformed": "Restez Informé",
+    "stayInformedDesc": "Contactez-nous pour discuter de nos dernières perspectives sur les marchés de capitaux.",
+    "contactTeam": "Contacter Notre Équipe"
+  },
+  "globalPresence": {
+    "subtitle": "Présence Mondiale",
+    "headline": "Plateforme de Conseil Mondiale",
+    "description": "Notre plateforme de conseil s'étend sur cinq continents, offrant une expertise locale avec une perspective globale.",
+    "headOffice": "Siège Social",
+    "headOfficeDesc": "Bureau de Coordination Principal",
+    "headOfficeLocation": "Ville, Pays",
+    "regionalSubtitle": "Réseau Régional",
+    "regionalTitle": "Bureaux Virtuels et Représentatifs",
+    "regionalDesc": "Exploités via les Centres d'Affaires Regus pour la coordination régionale et l'engagement client.",
+    "regions": {
+      "africa": "Afrique",
+      "middleEast": "Moyen-Orient",
+      "europe": "Europe",
+      "asia": "Asie",
+      "northAmerica": "Amérique du Nord"
+    },
+    "officeTypes": {
+      "representative": "Bureau Représentatif",
+      "virtual": "Bureau Virtuel"
+    },
+    "disclaimer": "Certains bureaux fonctionnent sur une base virtuelle ou représentative via les Centres d'Affaires Regus. Ces emplacements soutiennent l'engagement client et la coordination régionale.",
+    "ctaTitle": "Connectez-Vous Avec Nous à l'Échelle Mondiale",
+    "ctaDesc": "Contactez-nous pour discuter de vos besoins en capital avec nos équipes régionales."
+  },
+  "contact": {
+    "subtitle": "Contact",
+    "headline": "Contacter l'Équipe Conseil",
+    "description": "Soumettez votre demande et notre équipe répondra sous 2 à 3 jours ouvrables.",
+    "form": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Adresse Email",
+      "phone": "Numéro de Téléphone",
+      "company": "Société / Organisation",
+      "inquiryType": "Nature de la Demande",
+      "selectType": "Sélectionner le type de demande",
+      "message": "Message",
+      "messagePlaceholder": "Veuillez décrire votre demande, vos besoins en capital ou comment nous pouvons vous aider...",
+      "types": {
+        "advisory": "Engagement Conseil",
+        "funding": "Demande de Financement ou Capital",
+        "partnership": "Partenariat Stratégique",
+        "general": "Demande Générale"
+      }
+    },
+    "disclaimer": "Les soumissions ne sont pas contraignantes et sont soumises à examen interne.",
+    "contactInfo": "Coordonnées",
+    "emailLabel": "Email",
+    "phoneLabel": "Téléphone",
+    "headOfficeLabel": "Siège Social",
+    "toast": {
+      "title": "Demande Soumise",
+      "description": "Merci pour votre demande. Notre équipe examinera et répondra sous 2 à 3 jours ouvrables."
+    }
+  },
+  "footer": {
+    "tagline": "Conseil en capital indépendant et structuration d'investissements sur les marchés mondiaux.",
+    "disclaimer": "Ce site web est fourni à titre informatif uniquement et ne constitue pas une offre, une sollicitation ou un engagement à fournir des services financiers ou du financement."
+  }
+}
