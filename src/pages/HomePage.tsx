@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { ServiceCard } from "@/components/shared/ServiceCard";
-import { OptimizedImage } from "@/components/shared/OptimizedImage";
-import { PartnersSlider } from "@/components/shared/PartnersSlider";
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid } from "recharts";
 import {
   TrendingUp,
   Building2,
@@ -67,11 +67,18 @@ const sectors = [
 ];
 
 const regions = [
-  { name: "Africa", cities: "Nairobi • Lagos • Johannesburg" },
-  { name: "Middle East", cities: "Dubai • Riyadh" },
-  { name: "Europe", cities: "London • Frankfurt • Zurich" },
-  { name: "Asia", cities: "Singapore • Hong Kong" },
-  { name: "North America", cities: "New York • Toronto" },
+  { name: "Europe" },
+  { name: "Middle East" },
+  { name: "Asia" },
+  { name: "North America" },
+  { name: "Africa" },
+];
+
+const capitalLifecycleData = [
+  { phase: "Strategy", value: 100 },
+  { phase: "Structuring", value: 85 },
+  { phase: "Execution", value: 90 },
+  { phase: "Monitoring", value: 75 },
 ];
 
 export default function HomePage() {
@@ -80,19 +87,17 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* Hero Section */}
+      {/* Hero – New York background, no container around content */}
       <section className="relative min-h-[70vh] flex items-center text-primary-foreground overflow-hidden">
-        {/* Background Cover Image */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/images/hero-cover.jpg')",
+            backgroundImage: "url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1920&q=80')",
           }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-deep-blue/95 via-deep-blue/90 to-deep-blue/80"></div>
-        </div>
-        
-        {/* Content */}
+        />
+        <div className="absolute inset-0 bg-deep-blue/75 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-deep-blue/90 via-deep-blue/70 to-deep-blue/85" />
+
         <div className="container-wide relative z-10 py-20 md:py-28 lg:py-32">
           <div className="max-w-3xl">
             <p className="text-accent text-sm font-medium tracking-widest uppercase mb-6 animate-fade-in">
@@ -104,85 +109,64 @@ export default function HomePage() {
             <p className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed mb-8 animate-fade-in-up delay-100">
               We support enterprises, project sponsors, and public institutions in structuring capital, engaging investors, and executing disciplined financing strategies across global markets.
             </p>
-              <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-200">
-                <Button variant="hero" size="xl" asChild>
-                  <Link to={`${countryPrefix}/contact`}>
-                    Engage the Advisory Team
-                    <ArrowRight className="w-5 h-5" />
-                  </Link>
-                </Button>
-                <Button variant="heroOutline" size="xl" asChild>
-                  <Link to={`${countryPrefix}/services`}>Our Services</Link>
-                </Button>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-200">
+              <Button variant="hero" size="xl" asChild>
+                <Link to={`${countryPrefix}/contact`}>
+                  Engage the Advisory Team
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </Button>
+              <Button variant="heroOutline" size="xl" asChild>
+                <Link to={`${countryPrefix}/services`}>Our Services</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Value Proposition */}
+      {/* Value Proposition – DD-friendly, straightforward */}
       <section className="section-padding bg-background">
         <div className="container-wide">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div className="order-2 lg:order-1">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
               <SectionHeader
-                subtitle="Our Platform"
-                title="Disciplined Capital Structuring"
-                description="We operate as a capital advisory and transaction support platform, working with qualified clients to design financing structures, improve capital readiness, and facilitate engagement with institutional capital partners."
+                subtitle="Our platform"
+                title="Capital advisory and structuring"
+                description="We work with qualified clients to design financing structures and facilitate engagement with institutional capital partners."
               />
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Our work is guided by governance, risk discipline, and long-term alignment. We prioritize transparent processes and sustainable outcomes over transactional volume.
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Governance-led, risk-disciplined, and aligned to long-term outcomes.
               </p>
               <Button variant="goldLink" asChild>
                 <Link to={`${countryPrefix}/about`} className="flex items-center gap-2">
-                  Learn About Our Approach
+                  About us
                   <ChevronRight className="w-4 h-4" />
                 </Link>
               </Button>
             </div>
-            <div className="order-1 lg:order-2 relative">
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-secondary">
-                <OptimizedImage
-                  src="/images/financial-planning.jpg"
-                  alt="Strategic financial planning session with capital structuring analysis and investment frameworks"
-                  className=""
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent pointer-events-none"></div>
-              </div>
-              <div className="mt-6 bg-secondary rounded-lg p-8">
-                <div className="space-y-6">
-                  {[
-                    { label: "Governance-Led", desc: "Ethical standards and regulatory awareness" },
-                    { label: "Risk Disciplined", desc: "Comprehensive risk identification and mitigation" },
-                    { label: "Long-Term Aligned", desc: "Sustainable partnerships over quick transactions" },
-                  ].map((item, i) => (
-                    <div key={i} className="flex gap-4">
-                      <div className="w-1 bg-accent rounded-full" />
-                      <div>
-                        <h4 className="font-heading text-lg font-semibold text-foreground mb-1">
-                          {item.label}
-                        </h4>
-                        <p className="text-sm text-muted-foreground">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <div className="bg-card border border-border rounded-lg p-6">
+              <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-4">Capital lifecycle</p>
+              <ChartContainer config={{ phase: { label: "Phase" }, value: { label: "Score", color: "hsl(var(--accent))" } }} className="h-[200px] w-full">
+                <BarChart data={capitalLifecycleData} margin={{ top: 8, right: 8, bottom: 8, left: 8 }}>
+                  <CartesianGrid strokeDasharray="3 3" className="stroke-border/50" vertical={false} />
+                  <XAxis dataKey="phase" tickLine={false} axisLine={false} />
+                  <YAxis tickLine={false} axisLine={false} width={28} tickFormatter={(v) => `${v}%`} domain={[0, 100]} />
+                  <ChartTooltip content={<ChartTooltipContent />} cursor={false} />
+                  <Bar dataKey="value" fill="hsl(var(--accent))" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ChartContainer>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="section-padding bg-muted relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-deep-blue rounded-full blur-3xl"></div>
-        </div>
-        <div className="container-wide relative z-10">
+      {/* Services */}
+      <section className="section-padding bg-muted">
+        <div className="container-wide">
           <SectionHeader
-            subtitle="Our Services"
-            title="Core Service Pillars"
-            description="Comprehensive advisory and transaction support services across the capital lifecycle."
+            subtitle="Services"
+            title="What we do"
+            description="Advisory and transaction support across the capital lifecycle."
             align="center"
           />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
@@ -199,129 +183,61 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Sectors Section */}
+      {/* Sectors & reach */}
       <section className="section-padding bg-background">
         <div className="container-wide">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div className="relative">
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-6">
-                <OptimizedImage
-                  src="/images/infrastructure-projects.jpg"
-                  alt="Infrastructure and energy sector projects"
-                  className=""
-                />
-                <div className="absolute inset-0 bg-gradient-to-br from-deep-blue/60 to-transparent pointer-events-none"></div>
-              </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
               <SectionHeader
-                subtitle="Sectors Served"
-                title="Deep Sector Expertise"
-                description="We work across multiple sectors, applying specialized knowledge and established networks to support complex capital requirements."
+                subtitle="Sectors"
+                title="Sector coverage"
+                description="Infrastructure, energy, real estate, industrial, agribusiness, financial services, public sector."
               />
-              <div className="flex flex-wrap gap-3 mt-6">
+              <div className="flex flex-wrap gap-2 mt-4">
                 {sectors.map((sector) => (
-                  <span
-                    key={sector}
-                    className="px-4 py-2 bg-secondary text-foreground text-sm font-medium rounded-full border border-border hover:border-accent transition-colors cursor-default"
-                  >
+                  <span key={sector} className="px-3 py-1.5 bg-secondary text-foreground text-xs font-medium rounded-md border border-border">
                     {sector}
                   </span>
                 ))}
               </div>
-              <div className="mt-8">
-                <Button variant="goldLink" asChild>
-                  <Link to={`${countryPrefix}/sectors`} className="flex items-center gap-2">
-                    Explore All Sectors
-                    <ChevronRight className="w-4 h-4" />
-                  </Link>
-                </Button>
-              </div>
+              <Button variant="goldLink" asChild>
+                <Link to={`${countryPrefix}/sectors`} className="inline-flex items-center gap-2 mt-6">
+                  Sectors
+                  <ChevronRight className="w-4 h-4" />
+                </Link>
+              </Button>
             </div>
-            <div className="relative">
-              <div className="bg-gradient-navy rounded-lg p-8 md:p-12 text-primary-foreground relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-full -mr-32 -mt-32"></div>
-                <div className="relative z-10">
-                  <Globe className="w-12 h-12 text-accent mb-6" />
-                  <h3 className="font-heading text-2xl font-semibold mb-4">Global Reach</h3>
-                  <p className="text-primary-foreground/70 mb-8">
-                    Our advisory platform spans five continents, providing localized expertise with global perspective.
-                  </p>
-                  <div className="space-y-4">
-                    {regions.map((region) => (
-                      <div key={region.name} className="flex justify-between items-center">
-                        <span className="font-medium">{region.name}</span>
-                        <span className="text-sm text-primary-foreground/60">{region.cities}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6 relative aspect-[16/9] rounded-lg overflow-hidden">
-                <OptimizedImage
-                  src="/images/global-finance.jpg"
-                  alt="Global financial markets, international business networks, and cross-border capital flows"
-                  aspectRatio="aspect-[16/9]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-deep-blue/40 to-transparent pointer-events-none"></div>
+            <div className="bg-gradient-navy rounded-lg p-8 text-primary-foreground">
+              <Globe className="w-10 h-10 text-accent mb-4" />
+              <h3 className="font-heading text-lg font-semibold mb-2">Coverage</h3>
+              <p className="text-primary-foreground/70 text-sm mb-4">Europe through Africa.</p>
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-primary-foreground/80">
+                {regions.map((region) => (
+                  <span key={region.name}>{region.name}</span>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Partners Slider Section */}
+      {/* Partners – DD-friendly */}
       <section className="section-padding bg-muted">
-        <div className="container-wide">
-          <PartnersSlider
-            partners={[
-              {
-                name: "Institutional Investor 1",
-                logo: "/images/partners/institutional-1.png",
-                category: "Institutional",
-              },
-              {
-                name: "Development Finance Institution 1",
-                logo: "/images/partners/dfi-1.png",
-                category: "DFI",
-              },
-              {
-                name: "Private Credit Fund 1",
-                logo: "/images/partners/credit-fund-1.png",
-                category: "Credit Fund",
-              },
-              {
-                name: "Family Office 1",
-                logo: "/images/partners/family-office-1.png",
-                category: "Family Office",
-              },
-              {
-                name: "Strategic Co-Investor 1",
-                logo: "/images/partners/strategic-1.png",
-                category: "Strategic",
-              },
-              {
-                name: "Institutional Investor 2",
-                logo: "/images/partners/institutional-2.png",
-                category: "Institutional",
-              },
-            ]}
-            title="Trusted by Leading Capital Partners"
-            description="We work with premier institutional investors, development finance institutions, and strategic partners worldwide."
-            slidesToShow={5}
-            autoplay={true}
-          />
+        <div className="container-wide text-center max-w-xl mx-auto">
+          <p className="text-muted-foreground text-sm">
+            We work with institutional investors, DFIs, private credit providers, family offices, and strategic capital partners.
+          </p>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA */}
       <section className="bg-gradient-hero text-primary-foreground section-padding">
         <div className="container-wide text-center">
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 max-w-3xl mx-auto">
-            Ready to Structure Your Capital Strategy?
-          </h2>
-          <p className="text-lg text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-            Engage our advisory team to discuss your capital requirements and explore structured financing solutions.
+          <h2 className="font-heading text-2xl md:text-3xl font-semibold mb-4">Contact us</h2>
+          <p className="text-primary-foreground/80 mb-6 max-w-lg mx-auto text-sm">
+            Discuss your capital requirements with our advisory team.
           </p>
-          <Button variant="hero" size="xl" asChild>
+          <Button variant="hero" size="lg" asChild>
             <Link to={`${countryPrefix}/contact`}>
               Engage the Advisory Team
               <ArrowRight className="w-5 h-5" />

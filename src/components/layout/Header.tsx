@@ -34,9 +34,7 @@ export function Header() {
     { name: t("nav.services"), href: `${countryPrefix}/services`, hasDropdown: true },
     { name: t("nav.sectors"), href: `${countryPrefix}/sectors` },
     { name: t("nav.partners"), href: `${countryPrefix}/partners` },
-    { name: t("nav.process"), href: `${countryPrefix}/process` },
-    { name: t("nav.governance"), href: `${countryPrefix}/governance` },
-    { name: t("nav.globalPresence"), href: `${countryPrefix}/global-presence` },
+    { name: t("nav.contact"), href: `${countryPrefix}/contact` },
   ];
 
   const isActive = (href: string) => {
@@ -47,8 +45,8 @@ export function Header() {
   };
 
   return (
-    <header className={cn("fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border", isRTL && "rtl")}>
-      <nav className="container-wide flex items-center justify-between h-20">
+    <header className={cn("fixed top-0 left-0 right-0 z-[100] px-4 sm:px-6 lg:px-8", isRTL && "rtl")}>
+      <nav className="max-w-7xl mx-auto flex items-center justify-between h-16 mt-4 px-4 lg:px-6 bg-background/95 backdrop-blur-sm border border-border rounded-lg shadow-md">
         <Logo size="md" />
 
         <div className="hidden lg:flex items-center gap-6">
@@ -81,9 +79,9 @@ export function Header() {
           )}
         </div>
 
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-3">
           <LanguageSwitcher />
-          <Button variant="hero" size="lg" asChild>
+          <Button variant="hero" size="sm" asChild>
             <Link to={`${countryPrefix}/contact`}>{t("common.engageUs")}</Link>
           </Button>
         </div>
@@ -94,8 +92,9 @@ export function Header() {
       </nav>
 
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-background border-b border-border animate-fade-in">
-          <div className="container-wide py-6 space-y-4">
+        <div className="lg:hidden px-4 sm:px-6 lg:px-8 mt-2">
+          <div className="max-w-7xl mx-auto rounded-lg bg-background/95 backdrop-blur-sm border border-border shadow-sm animate-fade-in overflow-hidden">
+          <div className="p-5 space-y-3">
             {navigation.map((item) => (
               <div key={item.name}>
                 <Link to={item.href} className={cn("block py-2 text-base font-medium transition-colors hover:text-accent", isActive(item.href) ? "text-accent" : "text-foreground")} onClick={() => setMobileMenuOpen(false)}>
@@ -105,10 +104,11 @@ export function Header() {
             ))}
             <div className="pt-4 flex items-center gap-4">
               <LanguageSwitcher />
-              <Button variant="hero" size="lg" className="flex-1" asChild>
+              <Button variant="hero" size="sm" className="flex-1" asChild>
                 <Link to={`${countryPrefix}/contact`} onClick={() => setMobileMenuOpen(false)}>{t("common.engageUs")}</Link>
               </Button>
             </div>
+          </div>
           </div>
         </div>
       )}

@@ -33,9 +33,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           <div className="lg:col-span-1">
             <div className="mb-6">
-              <Logo size="md" showText={true} variant="light" />
+              <Logo size="2xl" variant="light" />
             </div>
-            <p className="text-sm text-primary-foreground/70 leading-relaxed">{t("footer.tagline")}</p>
+            <p className="text-sm text-primary-foreground/70 leading-relaxed mb-4">{t("footer.tagline")}</p>
+            <div className="text-sm text-primary-foreground/70 space-y-1">
+              <p><a href="tel:+13042669322" className="hover:text-accent">+1 (304) 266-9322</a></p>
+              <p>W. 25th Street, Virtual Office Space</p>
+              <p>New York, NY 10001</p>
+              <p><a href="https://quantavus.us" target="_blank" rel="noopener noreferrer" className="hover:text-accent break-all">https://quantavus.us</a></p>
+            </div>
           </div>
 
           <div>

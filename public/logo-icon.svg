@@ -1,13 +1,11 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background circle -->
-  <circle cx="32" cy="32" r="30" fill="#1A2A52"/>
-  <!-- Q Monogram -->
-  <g>
-    <!-- Outer circle -->
-    <circle cx="32" cy="32" r="22" fill="none" stroke="#D4AF37" stroke-width="2.5"/>
-    <!-- Q letter -->
-    <path d="M 32 18 Q 32 12 26 12 Q 20 12 20 18 Q 20 24 26 24 L 26 30" stroke="#D4AF37" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- Q tail -->
-    <path d="M 26 30 L 32 36" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
-  </g>
+<svg width="180" height="180" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="6" y="6" width="52" height="52" rx="12" fill="#1A2A52" stroke="#D4AF37" stroke-width="2.5"/>
+  <path d="M18 22C18 18.6863 20.6863 16 24 16H30C33.3137 16 36 18.6863 36 22V28C36 31.3137 33.3137 34 30 34H24C20.6863 34 18 31.3137 18 28V22Z" stroke="#D4AF37" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M30 30L34 34" stroke="#D4AF37" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M40 20C44 20 46 22 46 22" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M40 28C42.5 28 44 29 44 29" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M40 36C44 36 46 34 46 34" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M24 40L20 48" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M24 40L28 48" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 44H26" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round"/>
 </svg>

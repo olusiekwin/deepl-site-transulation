@@ -69,15 +69,20 @@ export default {
           light: "hsl(0 0% 40%)",
           dark: "hsl(0 0% 15%)",
         },
+        "electric-blue": {
+          DEFAULT: "hsl(var(--electric-blue))",
+          light: "hsl(217 91% 70%)",
+          dark: "hsl(217 91% 50%)",
+        },
+        silver: {
+          DEFAULT: "hsl(var(--silver))",
+          light: "hsl(210 14% 92%)",
+          dark: "hsl(210 14% 70%)",
+        },
         "rich-green": {
           DEFAULT: "hsl(var(--rich-green))",
           light: "hsl(142 70% 45%)",
           dark: "hsl(142 70% 30%)",
-        },
-        gold: {
-          DEFAULT: "hsl(var(--gold))",
-          light: "hsl(45 70% 60%)",
-          dark: "hsl(45 70% 40%)",
         },
         "light-gray": {
           DEFAULT: "hsl(var(--light-gray))",
@@ -94,7 +99,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       boxShadow: {
-        'gold': 'var(--shadow-gold)',
+        'accent': 'var(--shadow-accent)',
       },
       keyframes: {
         "accordion-down": {

@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Globe } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const inquiryTypes = [
@@ -233,7 +233,7 @@ export default function ContactPage() {
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="sticky top-28 space-y-8">
+              <div className="sticky top-24 space-y-8">
                 <div className="bg-gradient-navy rounded-lg p-8 text-primary-foreground">
                   <h3 className="font-heading text-xl font-semibold mb-6 text-accent">
                     Contact Information
@@ -253,7 +253,7 @@ export default function ContactPage() {
                       <div>
                         <p className="font-medium mb-1">Phone</p>
                         <p className="text-sm text-primary-foreground/80">
-                          +1 (212) 555-0100
+                          +1 (304) 266-9322
                         </p>
                       </div>
                     </div>
@@ -262,10 +262,19 @@ export default function ContactPage() {
                       <div>
                         <p className="font-medium mb-1">Head Office</p>
                         <p className="text-sm text-primary-foreground/80">
-                          Primary Coordination Office
+                          W. 25th Street, Virtual Office Space
                           <br />
-                          City, Country
+                          New York, NY 10001
                         </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <Globe className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-medium mb-1">Website</p>
+                        <a href="https://quantavus.us" target="_blank" rel="noopener noreferrer" className="text-sm text-primary-foreground/80 hover:text-accent break-all">
+                          https://quantavus.us
+                        </a>
                       </div>
                     </div>
                   </div>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -6,7 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { OptimizedImage } from "./OptimizedImage";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { cn } from "@/lib/utils";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -26,10 +26,75 @@ interface PartnersSliderProps {
   slidesToShow?: number;
 }
 
-/**
- * Professional Partners Slider Component
- * Displays partner logos in an elegant carousel
- */
+function PartnerTile({ partner, index }: { partner: Partner; index: number }) {
+  const [logoError, setLogoError] = useState(false);
+  const initials = partner.name
+    .split(/\s+/)
+    .map((w) => w[0])
+    .slice(0, 2)
+    .join("")
+    .toUpperCase();
+
+  const content = (
+    <div className="group relative h-32 md:h-40 bg-card border border-border rounded-lg p-6 flex items-center justify-center hover:border-accent transition-all duration-300 hover:shadow-md">
+      {!logoError && partner.logo ? (
+        <img
+          src={partner.logo}
+          alt={partner.name}
+          className="max-w-full max-h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity"
+          loading="lazy"
+          onError={() => setLogoError(true)}
+        />
+      ) : (
+        <div className="flex flex-col items-center gap-1">
+          <div className="w-12 h-12 rounded-lg bg-accent/10 border border-accent/30 flex items-center justify-center">
+            <span className="font-heading text-lg font-semibold text-accent">{initials}</span>
+          </div>
+          <span className="text-xs text-muted-foreground text-center line-clamp-2 px-1">{partner.name}</span>
+        </div>
+      )}
+      {partner.category && (
+        <div className="absolute bottom-2 left-2 right-2">
+          <span className="text-xs text-muted-foreground bg-background/90 px-2 py-1 rounded text-center block">
+            {partner.category}
+          </span>
+        </div>
+      )}
+    </div>
+  );
+
+  return (
+    <HoverCard openDelay={200} closeDelay={100}>
+      <HoverCardTrigger asChild>
+        <div className="cursor-default">
+          {partner.website ? (
+            <a
+              href={partner.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full h-full"
+              aria-label={partner.name}
+            >
+              {content}
+            </a>
+          ) : (
+            content
+          )}
+        </div>
+      </HoverCardTrigger>
+      <HoverCardContent side="top" className="w-64 rounded-lg border border-border shadow-lg">
+        <div className="space-y-2">
+          <p className="font-heading font-semibold text-foreground text-sm">{partner.name}</p>
+          {partner.category && (
+            <p className="text-xs text-muted-foreground">{partner.category}</p>
+          )}
+          <p className="text-xs text-muted-foreground">Capital partner</p>
+        </div>
+      </HoverCardContent>
+    </HoverCard>
+  );
+}
+
 export function PartnersSlider({
   partners,
   title = "Our Capital Partners",
@@ -38,7 +103,7 @@ export function PartnersSlider({
   autoplay = true,
   slidesToShow = 4,
 }: PartnersSliderProps) {
-  const [plugin] = useState(() => 
+  const [plugin] = useState(() =>
     autoplay ? Autoplay({ delay: 3000, stopOnInteraction: false }) : undefined
   );
 
@@ -60,11 +125,7 @@ export function PartnersSlider({
       )}
 
       <Carousel
-        opts={{
-          align: "start",
-          loop: true,
-          slidesToScroll: 1,
-        }}
+        opts={{ align: "start", loop: true, slidesToScroll: 1 }}
         plugins={plugin ? [plugin] : undefined}
         className="w-full"
       >
@@ -81,38 +142,7 @@ export function PartnersSlider({
                 slidesToShow === 6 && "md:basis-1/6"
               )}
             >
-              <div className="group relative h-32 md:h-40 bg-card border border-border rounded-lg p-6 flex items-center justify-center hover:border-accent transition-all duration-300 hover:shadow-md">
-                {partner.website ? (
-                  <a
-                    href={partner.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full h-full flex items-center justify-center"
-                    aria-label={`Visit ${partner.name}`}
-                  >
-                    <img
-                      src={partner.logo}
-                      alt={`${partner.name} logo${partner.category ? ` - ${partner.category}` : ""}`}
-                      className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                      loading="lazy"
-                    />
-                  </a>
-                ) : (
-                  <img
-                    src={partner.logo}
-                    alt={`${partner.name} logo${partner.category ? ` - ${partner.category}` : ""}`}
-                    className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                    loading="lazy"
-                  />
-                )}
-                {partner.category && (
-                  <div className="absolute bottom-2 left-2 right-2">
-                    <span className="text-xs text-muted-foreground bg-background/80 backdrop-blur-sm px-2 py-1 rounded text-center block">
-                      {partner.category}
-                    </span>
-                  </div>
-                )}
-              </div>
+              <PartnerTile partner={partner} index={index} />
             </CarouselItem>
           ))}
         </CarouselContent>
@@ -120,14 +150,10 @@ export function PartnersSlider({
         <CarouselNext className="hidden md:flex -right-12" />
       </Carousel>
 
-      {/* Auto-scroll indicator */}
       {autoplay && (
         <div className="flex justify-center gap-2 mt-8">
-          {partners.slice(0, Math.min(partners.length, 10)).map((_, index) => (
-            <div
-              key={index}
-              className="h-1 w-1 rounded-full bg-muted-foreground/30"
-            />
+          {partners.slice(0, Math.min(partners.length, 10)).map((_, i) => (
+            <div key={i} className="h-1 w-1 rounded-full bg-muted-foreground/30" />
           ))}
         </div>
       )}

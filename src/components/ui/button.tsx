@@ -15,14 +15,14 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Hero button - gold accent
-        hero: "bg-accent text-accent-foreground hover:bg-gold-dark shadow-gold hover:shadow-lg transform hover:-translate-y-0.5",
-        // Outlined gold button
+        // Hero button – electric blue accent
+        hero: "bg-accent text-accent-foreground hover:bg-electric-blue-dark shadow-accent hover:shadow-lg transform hover:-translate-y-0.5",
+        // Outlined accent button
         heroOutline: "border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground",
         // Navy button
-        navy: "bg-navy text-primary-foreground hover:bg-navy-light",
-        // Gold link
-        goldLink: "text-accent hover:text-gold-dark underline-offset-4 hover:underline p-0 h-auto",
+        navy: "bg-deep-blue text-primary-foreground hover:bg-deep-blue-light",
+        // Accent link
+        goldLink: "text-accent hover:text-electric-blue-dark underline-offset-4 hover:underline p-0 h-auto",
       },
       size: {
         default: "h-10 px-4 py-2",

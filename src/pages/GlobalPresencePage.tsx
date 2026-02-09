@@ -6,40 +6,40 @@ import { MapPin, Building, ArrowRight } from "lucide-react";
 
 const regions = [
   {
-    name: "Africa",
+    name: "Europe",
     offices: [
-      { city: "Nairobi, Kenya", type: "Representative Office" },
-      { city: "Lagos, Nigeria", type: "Virtual Office" },
-      { city: "Johannesburg, South Africa", type: "Virtual Office" },
+      { city: "London, United Kingdom", type: "Virtual Office" },
+      { city: "Frankfurt, Germany", type: "Virtual Office" },
+      { city: "Zurich, Switzerland", type: "Virtual Office" },
     ],
   },
   {
     name: "Middle East",
     offices: [
-      { city: "Dubai, UAE", type: "DIFC, Virtual Office" },
-      { city: "Riyadh, Saudi Arabia", type: "Representative Office" },
-    ],
-  },
-  {
-    name: "Europe",
-    offices: [
-      { city: "London, United Kingdom", type: "Canary Wharf, Virtual Office" },
-      { city: "Frankfurt, Germany", type: "Financial District, Virtual Office" },
-      { city: "Zurich, Switzerland", type: "Representative Office" },
+      { city: "Dubai, UAE", type: "Virtual Office" },
+      { city: "Riyadh, Saudi Arabia", type: "Virtual Office" },
     ],
   },
   {
     name: "Asia",
     offices: [
-      { city: "Singapore", type: "Raffles Place, Virtual Office" },
-      { city: "Hong Kong", type: "Central District, Virtual Office" },
+      { city: "Singapore", type: "Virtual Office" },
+      { city: "Hong Kong", type: "Virtual Office" },
     ],
   },
   {
     name: "North America",
     offices: [
-      { city: "New York, USA", type: "One World Trade Center, Representative Office" },
-      { city: "Toronto, Canada", type: "Bay Street, Virtual Office" },
+      { city: "New York, USA", type: "Head Office / Virtual Office Space" },
+      { city: "Toronto, Canada", type: "Virtual Office" },
+    ],
+  },
+  {
+    name: "Africa",
+    offices: [
+      { city: "Nairobi, Kenya", type: "Virtual Office" },
+      { city: "Lagos, Nigeria", type: "Virtual Office" },
+      { city: "Johannesburg, South Africa", type: "Virtual Office" },
     ],
   },
 ];
@@ -61,8 +61,9 @@ export default function GlobalPresencePage() {
             <h2 className="font-heading text-2xl font-semibold text-foreground mb-4">
               Head Office
             </h2>
-            <p className="text-muted-foreground mb-2">Primary Coordination Office</p>
-            <p className="text-foreground font-medium">City, Country</p>
+            <p className="text-muted-foreground mb-1">W. 25th Street, Virtual Office Space</p>
+            <p className="text-foreground font-medium">New York, NY 10001</p>
+            <p className="text-sm text-muted-foreground mt-2"><a href="tel:+13042669322" className="hover:text-accent">+1 (304) 266-9322</a></p>
           </div>
         </div>
       </section>
@@ -71,9 +72,9 @@ export default function GlobalPresencePage() {
       <section className="section-padding bg-background">
         <div className="container-wide">
           <SectionHeader
-            subtitle="Regional Network"
-            title="Virtual & Representative Offices"
-            description="Operated via Regus Business Centres for regional coordination and client engagement."
+            subtitle="Regional coverage"
+            title="Offices"
+            description="Virtual office and coordination points. Europe through Africa."
             align="center"
           />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -101,12 +102,10 @@ export default function GlobalPresencePage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="bg-secondary py-12">
+      <section className="bg-secondary py-10">
         <div className="container-wide">
           <p className="text-center text-sm text-muted-foreground max-w-2xl mx-auto">
-            Certain offices operate on a virtual or representative basis through
-            Regus Business Centres and support regional coordination and client
-            engagement only.
+            Virtual offices support coordination and client engagement. Head office: New York.
           </p>
         </div>
       </section>

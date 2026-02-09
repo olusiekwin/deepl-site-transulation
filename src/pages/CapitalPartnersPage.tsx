@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { PageHero } from "@/components/shared/PageHero";
 import { SectionHeader } from "@/components/shared/SectionHeader";
-import { PartnersSlider } from "@/components/shared/PartnersSlider";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ArrowRight, Building, Users, Landmark, Briefcase, Handshake } from "lucide-react";
 
@@ -85,64 +84,14 @@ export default function CapitalPartnersPage() {
         </div>
       </section>
 
-      {/* Partners Logo Slider */}
-      <section className="section-padding bg-background">
+      {/* Partner types – category overview only (DD-friendly) */}
+      <section className="section-padding bg-muted">
         <div className="container-wide">
-          <PartnersSlider
-            partners={[
-              {
-                name: "Institutional Investor 1",
-                logo: "/images/partners/institutional-1.png",
-                category: "Institutional",
-                website: "https://example.com",
-              },
-              {
-                name: "Development Finance Institution 1",
-                logo: "/images/partners/dfi-1.png",
-                category: "DFI",
-                website: "https://example.com",
-              },
-              {
-                name: "Private Credit Fund 1",
-                logo: "/images/partners/credit-fund-1.png",
-                category: "Credit Fund",
-                website: "https://example.com",
-              },
-              {
-                name: "Family Office 1",
-                logo: "/images/partners/family-office-1.png",
-                category: "Family Office",
-                website: "https://example.com",
-              },
-              {
-                name: "Strategic Co-Investor 1",
-                logo: "/images/partners/strategic-1.png",
-                category: "Strategic",
-                website: "https://example.com",
-              },
-              {
-                name: "Institutional Investor 2",
-                logo: "/images/partners/institutional-2.png",
-                category: "Institutional",
-                website: "https://example.com",
-              },
-              {
-                name: "Development Finance Institution 2",
-                logo: "/images/partners/dfi-2.png",
-                category: "DFI",
-                website: "https://example.com",
-              },
-              {
-                name: "Private Credit Fund 2",
-                logo: "/images/partners/credit-fund-2.png",
-                category: "Credit Fund",
-                website: "https://example.com",
-              },
-            ]}
-            title="Our Capital Partners"
-            description="We maintain relationships with leading institutional capital providers, development finance institutions, and strategic investors across global markets."
-            slidesToShow={4}
-            autoplay={true}
+          <SectionHeader
+            subtitle="Partner types"
+            title="Institutional Capital Ecosystem"
+            description="We engage with institutional investors, development finance institutions, private credit providers, family offices, and strategic co-investors. All engagements are subject to qualification and alignment assessment."
+            align="center"
           />
         </div>
       </section>

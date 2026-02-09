@@ -117,7 +117,7 @@ export function ServiceDetailLayout({
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="sticky top-28 space-y-8">
+              <div className="sticky top-24 space-y-8">
                 <div className="bg-gradient-navy rounded-lg p-8 text-primary-foreground">
                   <h3 className="font-heading text-xl font-semibold mb-4 text-accent">
                     Ready to Begin?
