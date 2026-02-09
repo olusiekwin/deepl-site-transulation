@@ -87,8 +87,8 @@ export default function HomePage() {
 
   return (
     <div>
-      {/* Hero – New York background, no container around content */}
-      <section className="relative min-h-[70vh] flex items-center text-primary-foreground overflow-hidden">
+      {/* Hero – full bleed to top, header floats inside */}
+      <section className="relative min-h-[70vh] flex items-center text-primary-foreground overflow-hidden -mt-24">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{

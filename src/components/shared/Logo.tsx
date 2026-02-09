@@ -20,19 +20,19 @@ export function Logo({
   const countryPrefix = `/${country}`;
 
   const sizeClasses = {
-    sm: "h-10",
-    md: "h-12",
-    lg: "h-14",
-    xl: "h-18",
-    "2xl": "h-22",
+    sm: "h-9",
+    md: "h-11",
+    lg: "h-12",
+    xl: "h-14",
+    "2xl": "h-16",
   };
 
   const dimensions = {
-    sm: { w: 200, h: 40 },
-    md: { w: 240, h: 48 },
-    lg: { w: 280, h: 56 },
-    xl: { w: 360, h: 72 },
-    "2xl": { w: 440, h: 88 },
+    sm: { w: 180, h: 36 },
+    md: { w: 220, h: 44 },
+    lg: { w: 260, h: 52 },
+    xl: { w: 320, h: 64 },
+    "2xl": { w: 380, h: 76 },
   };
   const { w, h } = dimensions[size];
 

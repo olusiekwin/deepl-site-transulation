@@ -44,17 +44,20 @@ export function Header() {
     return location.pathname === href;
   };
 
+  const isHome = location.pathname === "/" || location.pathname === countryPrefix || location.pathname === `${countryPrefix}/`;
+  const navLight = isHome;
+
   return (
-    <header className={cn("fixed top-0 left-0 right-0 z-[100] px-4 sm:px-6 lg:px-8", isRTL && "rtl")}>
-      <nav className="max-w-7xl mx-auto flex items-center justify-between h-16 mt-4 px-4 lg:px-6 bg-background/95 backdrop-blur-sm border border-border rounded-lg shadow-md">
-        <Logo size="md" />
+    <header className={cn("fixed top-0 left-0 right-0 z-[100] px-4 sm:px-6 lg:px-8 pt-4", isRTL && "rtl")}>
+      <nav className="max-w-7xl mx-auto flex items-center justify-between h-16 px-4 lg:px-6">
+        <Logo size="lg" variant={navLight ? "light" : "default"} />
 
         <div className="hidden lg:flex items-center gap-6">
           {navigation.map((item) =>
             item.hasDropdown ? (
               <DropdownMenu key={item.name}>
                 <DropdownMenuTrigger asChild>
-                  <button className={cn("flex items-center gap-1 text-sm font-medium transition-colors hover:text-accent", isActive(item.href) ? "text-accent" : "text-muted-foreground")}>
+                  <button className={cn("flex items-center gap-1 text-sm font-medium transition-colors hover:text-accent", navLight ? (isActive(item.href) ? "text-accent" : "text-white/80") : (isActive(item.href) ? "text-accent" : "text-muted-foreground"))}>
                     {item.name}
                     <ChevronDown className="w-4 h-4" />
                   </button>
@@ -72,7 +75,7 @@ export function Header() {
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
-              <Link key={item.name} to={item.href} className={cn("text-sm font-medium transition-colors hover:text-accent", isActive(item.href) ? "text-accent" : "text-muted-foreground")}>
+              <Link key={item.name} to={item.href} className={cn("text-sm font-medium transition-colors hover:text-accent", navLight ? (isActive(item.href) ? "text-accent" : "text-white/80") : (isActive(item.href) ? "text-accent" : "text-muted-foreground"))}>
                 {item.name}
               </Link>
             )
@@ -86,18 +89,18 @@ export function Header() {
           </Button>
         </div>
 
-        <button className="lg:hidden p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-          {mobileMenuOpen ? <X className="w-6 h-6 text-foreground" /> : <Menu className="w-6 h-6 text-foreground" />}
+        <button className={cn("lg:hidden p-2", navLight ? "text-white" : "text-foreground")} onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </nav>
 
       {mobileMenuOpen && (
         <div className="lg:hidden px-4 sm:px-6 lg:px-8 mt-2">
-          <div className="max-w-7xl mx-auto rounded-lg bg-background/95 backdrop-blur-sm border border-border shadow-sm animate-fade-in overflow-hidden">
+          <div className={cn("max-w-7xl mx-auto rounded-lg backdrop-blur-md border shadow-lg animate-fade-in overflow-hidden", navLight ? "bg-deep-blue/95 border-white/20" : "bg-background/95 border-border")}>
           <div className="p-5 space-y-3">
             {navigation.map((item) => (
               <div key={item.name}>
-                <Link to={item.href} className={cn("block py-2 text-base font-medium transition-colors hover:text-accent", isActive(item.href) ? "text-accent" : "text-foreground")} onClick={() => setMobileMenuOpen(false)}>
+                <Link to={item.href} className={cn("block py-2 text-base font-medium transition-colors hover:text-accent", navLight ? "text-primary-foreground" : (isActive(item.href) ? "text-accent" : "text-foreground"))} onClick={() => setMobileMenuOpen(false)}>
                   {item.name}
                 </Link>
               </div>
