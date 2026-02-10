@@ -4,7 +4,16 @@ import { SectionHeader } from "@/components/shared/SectionHeader";
 import { ServiceCard } from "@/components/shared/ServiceCard";
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid } from "recharts";
+import {
+  AreaChart,
+  Area,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  ReferenceLine,
+} from "recharts";
 import {
   TrendingUp,
   Building2,
@@ -66,6 +75,17 @@ const sectors = [
   "Public Sector",
 ];
 
+// Sector allocation (illustrative) – like fund fact sheets / investment dashboards
+const sectorAllocationData = [
+  { sector: "Infrastructure", allocation: 24, fill: "hsl(var(--accent))" },
+  { sector: "Energy", allocation: 18, fill: "hsl(var(--accent))" },
+  { sector: "Real Estate", allocation: 16, fill: "hsl(var(--accent))" },
+  { sector: "Industrial", allocation: 14, fill: "hsl(var(--accent))" },
+  { sector: "Agribusiness", allocation: 12, fill: "hsl(var(--accent))" },
+  { sector: "Fin. Services", allocation: 9, fill: "hsl(var(--accent))" },
+  { sector: "Public Sector", allocation: 7, fill: "hsl(var(--accent))" },
+];
+
 const regions = [
   { name: "Europe" },
   { name: "Middle East" },
@@ -74,11 +94,20 @@ const regions = [
   { name: "Africa" },
 ];
 
-const capitalLifecycleData = [
-  { phase: "Strategy", value: 100 },
-  { phase: "Structuring", value: 85 },
-  { phase: "Execution", value: 90 },
-  { phase: "Monitoring", value: 75 },
+// Realistic time series: capital deployed / portfolio performance (illustrative)
+const portfolioPerformanceData = [
+  { date: "Jan", value: 2.08, fullDate: "Jan 2024" },
+  { date: "Feb", value: 2.12, fullDate: "Feb 2024" },
+  { date: "Mar", value: 2.05, fullDate: "Mar 2024" },
+  { date: "Apr", value: 2.18, fullDate: "Apr 2024" },
+  { date: "May", value: 2.22, fullDate: "May 2024" },
+  { date: "Jun", value: 2.31, fullDate: "Jun 2024" },
+  { date: "Jul", value: 2.28, fullDate: "Jul 2024" },
+  { date: "Aug", value: 2.35, fullDate: "Aug 2024" },
+  { date: "Sep", value: 2.41, fullDate: "Sep 2024" },
+  { date: "Oct", value: 2.38, fullDate: "Oct 2024" },
+  { date: "Nov", value: 2.44, fullDate: "Nov 2024" },
+  { date: "Dec", value: 2.52, fullDate: "Dec 2024" },
 ];
 
 export default function HomePage() {
@@ -145,15 +174,59 @@ export default function HomePage() {
               </Button>
             </div>
             <div className="bg-card border border-border rounded-lg p-6">
-              <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-4">Capital lifecycle</p>
-              <ChartContainer config={{ phase: { label: "Phase" }, value: { label: "Score", color: "hsl(var(--accent))" } }} className="h-[200px] w-full">
-                <BarChart data={capitalLifecycleData} margin={{ top: 8, right: 8, bottom: 8, left: 8 }}>
-                  <CartesianGrid strokeDasharray="3 3" className="stroke-border/50" vertical={false} />
-                  <XAxis dataKey="phase" tickLine={false} axisLine={false} />
-                  <YAxis tickLine={false} axisLine={false} width={28} tickFormatter={(v) => `${v}%`} domain={[0, 100]} />
-                  <ChartTooltip content={<ChartTooltipContent />} cursor={false} />
-                  <Bar dataKey="value" fill="hsl(var(--accent))" radius={[4, 4, 0, 0]} />
-                </BarChart>
+              <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1">Portfolio performance</p>
+              <p className="text-muted-foreground text-xs mb-4">Capital deployed (illustrative, $M)</p>
+              <ChartContainer
+                config={{ date: { label: "Date" }, value: { label: "Value", color: "hsl(var(--accent))" } }}
+                className="h-[220px] w-full"
+              >
+                <AreaChart
+                  data={portfolioPerformanceData}
+                  margin={{ top: 8, right: 12, bottom: 8, left: 4 }}
+                >
+                  <defs>
+                    <linearGradient id="portfolioValueGradient" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor="hsl(var(--accent))" stopOpacity={0.4} />
+                      <stop offset="100%" stopColor="hsl(var(--accent))" stopOpacity={0.02} />
+                    </linearGradient>
+                  </defs>
+                  <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" vertical={false} />
+                  <XAxis
+                    dataKey="date"
+                    tickLine={false}
+                    axisLine={{ stroke: "hsl(var(--border))" }}
+                    tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }}
+                  />
+                  <YAxis
+                    tickLine={false}
+                    axisLine={false}
+                    width={36}
+                    tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }}
+                    tickFormatter={(v) => `$${v.toFixed(1)}M`}
+                    domain={["dataMin - 0.05", "dataMax + 0.05"]}
+                  />
+                  <ChartTooltip
+                    content={
+                      <ChartTooltipContent
+                        labelFormatter={(_, payload) => payload?.[0]?.payload?.fullDate}
+                        formatter={(value) => (
+                          <span className="font-mono font-semibold tabular-nums text-foreground">
+                            ${Number(value).toFixed(2)}M
+                          </span>
+                        )}
+                      />
+                    }
+                    cursor={{ stroke: "hsl(var(--border))", strokeWidth: 1, strokeDasharray: "4 4" }}
+                  />
+                  <ReferenceLine y={2.52} stroke="hsl(var(--accent))" strokeDasharray="2 2" strokeOpacity={0.6} />
+                  <Area
+                    type="monotone"
+                    dataKey="value"
+                    stroke="hsl(var(--accent))"
+                    strokeWidth={2}
+                    fill="url(#portfolioValueGradient)"
+                  />
+                </AreaChart>
               </ChartContainer>
             </div>
           </div>
@@ -207,14 +280,45 @@ export default function HomePage() {
                 </Link>
               </Button>
             </div>
-            <div className="bg-gradient-navy rounded-lg p-8 text-primary-foreground">
-              <Globe className="w-10 h-10 text-accent mb-4" />
-              <h3 className="font-heading text-lg font-semibold mb-2">Coverage</h3>
-              <p className="text-primary-foreground/70 text-sm mb-4">Europe through Africa.</p>
-              <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-primary-foreground/80">
-                {regions.map((region) => (
-                  <span key={region.name}>{region.name}</span>
-                ))}
+            <div className="space-y-6">
+              <div className="bg-card border border-border rounded-lg p-6">
+                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1">Sector allocation</p>
+                <p className="text-muted-foreground text-xs mb-4">Illustrative weight by sector (%)</p>
+                <ChartContainer
+                  config={{ sector: { label: "Sector" }, allocation: { label: "Allocation", color: "hsl(var(--accent))" } }}
+                  className="h-[200px] w-full"
+                >
+                  <BarChart
+                    data={sectorAllocationData}
+                    layout="vertical"
+                    margin={{ top: 4, right: 12, bottom: 4, left: 60 }}
+                  >
+                    <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" horizontal={false} />
+                    <XAxis type="number" domain={[0, 30]} tickFormatter={(v) => `${v}%`} tickLine={false} axisLine={{ stroke: "hsl(var(--border))" }} tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }} />
+                    <YAxis type="category" dataKey="sector" tickLine={false} axisLine={false} width={58} tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }} />
+                    <ChartTooltip
+                      content={
+                        <ChartTooltipContent
+                          formatter={(value) => (
+                            <span className="font-mono font-semibold tabular-nums">{Number(value).toFixed(0)}%</span>
+                          )}
+                        />
+                      }
+                      cursor={false}
+                    />
+                    <Bar dataKey="allocation" fill="hsl(var(--accent))" radius={[0, 4, 4, 0]} maxBarSize={14} />
+                  </BarChart>
+                </ChartContainer>
+              </div>
+              <div className="bg-gradient-navy rounded-lg p-8 text-primary-foreground">
+                <Globe className="w-10 h-10 text-accent mb-4" />
+                <h3 className="font-heading text-lg font-semibold mb-2">Coverage</h3>
+                <p className="text-primary-foreground/70 text-sm mb-4">Europe through Africa.</p>
+                <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-primary-foreground/80">
+                  {regions.map((region) => (
+                    <span key={region.name}>{region.name}</span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

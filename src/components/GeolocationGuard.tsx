@@ -34,9 +34,22 @@ export function GeolocationGuard({
   const location = useLocation();
 
   useEffect(() => {
+    const currentPath = location.pathname;
+    const pathParts = currentPath.split('/').filter(Boolean);
+    const firstSegment = pathParts[0] as string | undefined;
+    const hasValidCountry = firstSegment && allowedCountries.includes(firstSegment as AllowedCountry);
+
+    // Path already has a valid country – no check, no redirect, no spinner
+    if (hasValidCountry) {
+      setIsChecking(false);
+      setIsAllowed(true);
+      setUserCountry(firstSegment as AllowedCountry);
+      return;
+    }
+
     const checkAccess = async () => {
       setIsChecking(true);
-      
+
       const result = await isCountryAllowed({
         allowedCountries,
         redirectTo,
@@ -46,20 +59,21 @@ export function GeolocationGuard({
       setUserCountry(result.userCountry);
       setIsAllowed(result.allowed);
 
-      // If not allowed and redirect is enabled, redirect to allowed country
       if (!result.allowed && !blockAccess && redirectTo) {
-        const currentPath = location.pathname;
         const pathParts = currentPath.split('/');
-        
-        // Replace country code in URL
-        if (pathParts[1] && ['us', 'uk', 'fr', 'de'].includes(pathParts[1])) {
+        let newPath: string;
+
+        if (pathParts[1] && allowedCountries.includes(pathParts[1] as AllowedCountry)) {
           pathParts[1] = redirectTo;
+          newPath = pathParts.join('/');
         } else {
           pathParts.splice(1, 0, redirectTo);
+          newPath = pathParts.join('/') || `/${redirectTo}`;
         }
-        
-        const newPath = pathParts.join('/') || `/${redirectTo}`;
-        navigate(newPath, { replace: true });
+
+        if (newPath !== currentPath) {
+          navigate(newPath, { replace: true });
+        }
       }
 
       setIsChecking(false);
